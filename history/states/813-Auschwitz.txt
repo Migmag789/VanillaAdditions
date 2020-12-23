@@ -4,7 +4,7 @@ state={
 	manpower=159000
 	state_category=rural
 	provinces={
-		9412 13205 13249 
+		9412 13205
 	}
 	history={
 		owner = POL
