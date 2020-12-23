@@ -1,0 +1,22 @@
+state={
+	id=814
+	name="Grodno"
+	provinces={
+		3393 13206 13248 
+	}
+	history={
+		victory_points = {
+			13206 1
+		}
+		owner = POL
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = POL
+		add_core_of = BLR
+
+	}
+	state_category=rural
+	manpower=83000
+	buildings_max_level_factor=1.000
+}

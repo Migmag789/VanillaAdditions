@@ -1,0 +1,42 @@
+ideas = {
+	country = {
+		ENG_withdrawn_from_territory = {
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				tag = ENG
+			}
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.02
+			}
+		}
+		ENG_encourage_new_elites_idea = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		ENG_national_government = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				political_power_factor = 0.2
+				surrender_limit = 0.2
+			}
+		}
+	}
+}

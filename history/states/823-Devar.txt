@@ -1,0 +1,24 @@
+state={
+	id=823
+	name="Devar"
+	provinces={
+		833 867 
+	}
+history={
+	owner = YUG
+	victory_points = {
+		833 1
+	}
+
+	buildings = {
+		infrastructure = 3
+
+	}
+	add_core_of = YUG
+	add_core_of = MAC
+	add_core_of = ALB
+}
+manpower=150100
+buildings_max_level_factor=1.000
+state_category = rural
+}

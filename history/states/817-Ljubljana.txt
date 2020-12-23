@@ -1,0 +1,21 @@
+state={
+	id=817
+	name="Ljubljana"
+	provinces={
+		6650 9627 
+	}
+	history ={
+		owner = YUG
+		buildings = {
+			infrastructure = 6
+		}
+		victory_points = {
+			9627 3 
+		}
+		add_core_of = YUG
+		add_core_of = SLV
+	}
+	state_category = town
+	manpower=413000
+	buildings_max_level_factor=1.000
+}

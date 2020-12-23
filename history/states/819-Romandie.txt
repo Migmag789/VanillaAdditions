@@ -1,0 +1,21 @@
+state={
+	id=819
+	name="Romandie"
+	provinces={
+		3612 6666 6683 9622 11590 13124
+	}
+	history={
+		owner = SWI
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = SWI
+
+	}
+	state_category=town
+	manpower=800554
+	buildings_max_level_factor=1.000
+}

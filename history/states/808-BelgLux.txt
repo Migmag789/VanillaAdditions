@@ -1,0 +1,27 @@
+
+state={
+	id=808
+	name="Belgian_Luxemburg"
+
+	history={
+		owner = BEL
+		victory_points = {
+			9418 3 
+		}
+		buildings = {
+			infrastructure = 6
+
+		}
+		add_core_of = BEL
+
+	}
+
+	provinces={
+		11407 9418 3488 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=town
+}
+
+

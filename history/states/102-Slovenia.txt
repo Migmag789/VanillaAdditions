@@ -1,0 +1,23 @@
+state=
+{
+	id=102
+	name="STATE_102"
+	manpower = 588300
+	
+	state_category = town
+	
+	history ={
+		owner = YUG
+		buildings = {
+			infrastructure = 6
+		}
+		victory_points = {
+			596 2
+		}
+		add_core_of = YUG
+		add_core_of = SLV
+	}
+	provinces={
+		596 665 3631 3654 9596
+		}
+	}

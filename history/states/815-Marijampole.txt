@@ -1,0 +1,18 @@
+state={
+	id=815
+	name="Marijampole"
+	provinces={
+		3272 6281 6407 11312 
+	}
+	history={
+		owner = LIT
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		add_core_of = LIT
+	}
+	state_category=rural
+	manpower=359000
+	buildings_max_level_factor=1.000
+}

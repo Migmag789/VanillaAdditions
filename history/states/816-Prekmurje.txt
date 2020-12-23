@@ -1,0 +1,18 @@
+state={
+	id=816
+	name="Prekmurje"
+	provinces={
+		6672 
+	}
+	history={
+		owner = YUG
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = YUG
+		add_core_of = SLV
+}
+	state_category=pastoral
+	manpower=103000
+	buildings_max_level_factor=1.000
+}

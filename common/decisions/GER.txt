@@ -1,0 +1,5304 @@
+#Category only allowed for GER
+GER_mefo_bills_category = {
+
+	GER_mefo_bills_mission = {
+
+		allowed = { always = no }
+
+		icon = ger_mefo_bills
+
+		available = {
+			NOT = { has_government = democratic }
+			GER_can_delay_mefo_payment = yes
+			has_political_power > 0
+			hidden_trigger = { always = no }
+		}
+
+		#cost = GER_mefo_bill_counter?10
+
+		days_mission_timeout = 180
+		is_good = yes
+		fire_only_once = yes
+
+		cancel_trigger = {
+			hidden_trigger = {
+				OR = {
+					NOT = { GER_has_mefo_bills = yes }
+					has_idea = GER_mefo_bills_ended
+				}
+			}
+		}
+
+		days_remove = GER_extend_mefo_bills_days?0
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			if = {
+				limit = {
+					has_country_flag = ger_has_cancelled_mefo
+				}
+				GER_remove_mefo_bills = yes
+				#1
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
+					}
+					add_political_power = -20
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 60 }
+				}
+				#2
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 20 compare = equals }
+					}
+					add_political_power = -40
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 80 }
+				}
+				#3
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 30 compare = equals }
+					}
+					add_political_power = -60
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 100 }
+				}
+				#4
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 40 compare = equals }
+					}
+					add_political_power = -80
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 120 }
+				}
+				#5
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 50 compare = equals }
+					}
+					add_political_power = -100
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 140 }
+				}
+				#6
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 60 compare = equals }
+					}
+					add_political_power = -120
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 160 }
+				}
+				#7
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 70 compare = equals }
+					}
+					add_political_power = -140
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 180 }
+				}
+				#8
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 80 compare = equals }
+					}
+					add_political_power = -160
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 200 }
+				}
+				#9
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 90 compare = equals }
+					}
+					add_political_power = -180
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 220 }
+				}
+				#10
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 100 compare = equals }
+					}
+					add_political_power = -200
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 240 }
+				}
+				#11
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 110 compare = equals }
+					}
+					add_political_power = -220
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 260 }
+				}
+				#12
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 120 compare = equals }
+					}
+					add_political_power = -240
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 280 }
+				}
+				#13
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 130 compare = equals }
+					}
+					add_political_power = -260
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 300 }
+				}
+				#14
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 140 compare = equals }
+					}
+					add_political_power = -280
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 320 }
+				}
+				#15
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 150 compare = equals }
+					}
+					add_political_power = -300
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 340 }
+				}
+				#16
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 160 compare = equals }
+					}
+					add_political_power = -320
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 360 }
+				}
+				#17
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 170 compare = equals }
+					}
+					add_political_power = -340
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 380 }
+				}
+				#18
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 180 compare = equals }
+					}
+					add_political_power = -360
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 400 }
+				}
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 180 compare = greater_than }
+					}
+					add_political_power = -380
+					add_timed_idea = { idea = GER_mefo_bills_ended days = 420 }
+				}
+			}
+			else = {
+				custom_effect_tooltip = GER_mefo_bills_mission_tt
+				custom_effect_tooltip = GER_mefo_bills_effect_in_days
+				hidden_effect = {
+					set_variable = { GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission }
+					set_country_flag = paid_for_mefo
+				}
+				GER_mefo_bills_level_up = yes
+				if = {
+					limit = {
+						check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
+					}
+					hidden_effect = { set_variable = { var = GER_mefo_bill_counter value = 10 } }
+				}
+				add_to_variable = { var = GER_mefo_bill_counter value = 10 }
+
+				hidden_effect = {
+					activate_mission = GER_mefo_bills_mission
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+	
+	GER_cancel_mefos = {
+
+		icon = ger_mefo_bills
+
+		available = {
+			hidden_trigger = { 
+				NOT = { has_country_flag = ger_has_cancelled_mefo } 
+				NOT = {
+					OR = {
+						NOT = { GER_has_mefo_bills = yes }
+						has_idea = GER_mefo_bills_ended
+					}
+				}
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		visible = {
+			hidden_trigger = { 
+				NOT = { has_country_flag = ger_has_cancelled_mefo } 
+				NOT = {
+					OR = {
+						NOT = { GER_has_mefo_bills = yes }
+						has_idea = GER_mefo_bills_ended
+					}
+				}
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		remove_effect = {
+			set_country_flag = ger_has_cancelled_mefo
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	GER_renew_mefos = {
+
+		icon = ger_mefo_bills
+
+		available = {
+			hidden_trigger = { 
+				has_country_flag = ger_has_cancelled_mefo
+				NOT = {
+					OR = {
+						NOT = { GER_has_mefo_bills = yes }
+						has_idea = GER_mefo_bills_ended
+					}
+				}
+			}
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+		visible = {
+			hidden_trigger = { 
+				has_country_flag = ger_has_cancelled_mefo
+				NOT = {
+					OR = {
+						NOT = { GER_has_mefo_bills = yes }
+						has_idea = GER_mefo_bills_ended
+					}
+				}
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		remove_effect = {
+			clr_country_flag = ger_has_cancelled_mefo
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+
+operations = {
+
+	GER_barbarossa_mission = {
+
+		icon = generic_operation
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		available = {
+			219 = { is_controlled_by_ROOT_or_ally = yes }
+			195 = { is_controlled_by_ROOT_or_ally = yes }
+			202 = { is_controlled_by_ROOT_or_ally = yes }
+			217 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+
+		days_mission_timeout = 180
+		fire_only_once = yes
+
+		activation = {
+
+		}
+
+		is_good = no
+
+		complete_effect = {
+			add_war_support = 0.1
+			custom_effect_tooltip = barbarossa_mission_tt
+		}
+
+		timeout_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+GER_case_anton_category = {
+
+	GER_case_anton = {
+
+		icon = generic_operation
+
+		available = {
+			original_tag = GER
+			has_war = yes
+			has_government = fascism
+			any_country_with_original_tag = {
+				original_tag_to_check = FRA
+				has_government = fascism
+				OR = {
+					is_subject_of = GER
+					has_focus_tree = vichy_french_focus
+				}
+				NOT = { has_war_with = GER }
+				NOT = { has_country_flag = case_anton }
+				custom_trigger_tooltip = {
+					tooltip = GER_case_anton_tt2
+					462 = { CONTROLLER = { has_war_with = ROOT } }
+					461 = { CONTROLLER = { has_war_with = ROOT } }
+					513 = { CONTROLLER = { has_war_with = ROOT } }
+				 	462 = { CONTROLLER = { has_war_with = ROOT } }
+					459 = { CONTROLLER = { has_war_with = ROOT } }
+					460 = { CONTROLLER = { has_war_with = ROOT } }
+					458 = { CONTROLLER = { has_war_with = ROOT } }
+					665 = { CONTROLLER = { has_war_with = ROOT } }
+				}
+			}
+			divisions_in_state = { state = 31 size < 1 }
+			divisions_in_state = { state = 25 size < 1 }
+			divisions_in_state = { state = 22 size < 1 }
+			divisions_in_state = { state = 21 size < 1 }
+			divisions_in_state = { state = 32 size < 1 }
+			divisions_in_state = { state = 22 size < 1 }
+			divisions_in_state = { state = 26 size < 1 }
+			divisions_in_state = { state = 33 size < 1 }
+			divisions_in_state = { state = 20 size < 1 }
+			OR = {
+				ITA = { owns_state = 735 }
+				divisions_in_state = { state = 735 size < 1 }
+			}
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		visible = {
+			original_tag = GER
+			has_government = fascism
+			any_country_with_original_tag = {
+				original_tag_to_check = FRA
+				has_government = fascism
+				OR = {
+					is_subject_of = GER
+					has_focus_tree = vichy_french_focus
+				}
+				NOT = { has_war_with = GER }
+			}
+		}
+		ai_will_do = {
+			factor = 25
+
+			modifier = {
+				factor = 0
+				VIC = { is_ai = no }
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = GER_case_anton_tt
+			hidden_effect = {
+				random_other_country = {
+					limit = {
+						original_tag = FRA
+						has_government = fascism
+						OR = {
+							is_subject_of = GER
+							has_focus_tree = vichy_french_focus
+						}
+					}
+					set_country_flag = case_anton
+					activate_mission = FRA_case_anton_mission
+				}
+			}
+		}
+	}
+}
+
+#Category only allowed for GER
+GER_reichskommissariats = {
+	GER_reichskommissariat_norwegen = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 110
+			controls_state = 142
+			controls_state = 143
+			controls_state = 144
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = NOR
+					NOT = { NOR = { has_government = fascism } }
+				}
+				hidden_effect = {
+					NOR = {
+						set_state_controller = 110
+						set_state_controller = 142
+						set_state_controller = 143
+						set_state_controller = 144
+					}
+				}
+				NOR = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 110
+						transfer_state = 142
+						transfer_state = 143
+						transfer_state = 144
+						GER = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						set_cosmetic_tag = NOR_reichskommissariat
+						create_country_leader = {
+							name = "Josef Terboven"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				NOR = {
+					transfer_state = 110
+					transfer_state = 142
+					transfer_state = 143
+					transfer_state = 144
+					set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Josef Terboven"
+						desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = NOR autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_brittanien = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 14
+			controls_state = 15
+			controls_state = 30
+			controls_state = 23
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			15 = { add_core_of = BRI }
+			30 = { add_core_of = BRI }
+			23 = { add_core_of = BRI }
+			if = {
+				limit = {
+					country_exists = BRI
+					NOT = { BRI = { has_government = fascism } }
+				}
+				hidden_effect = {
+					BRI = {
+						set_state_controller = 14
+						set_state_controller = 15
+						set_state_controller = 30
+						set_state_controller = 23
+					}
+				}
+				BRI = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 14
+						transfer_state = 15
+						transfer_state = 30
+						transfer_state = 23
+						BRI = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						set_cosmetic_tag = BRI_reichskommissariat
+						create_country_leader = {
+							name = "Josef Terboven"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				BRI = {
+					transfer_state = 14
+					transfer_state = 15
+					transfer_state = 30
+					transfer_state = 23
+					add_war_support = 30
+					set_cosmetic_tag = BRI_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = BRI autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_danemark = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 99
+			controls_state = 37
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = DEN
+					NOT = { DEN = { has_government = fascism } }
+				}
+				hidden_effect = {
+					DEN = {
+						set_state_controller = 99
+						set_state_controller = 37
+					}
+				}
+				DEN = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 99
+						transfer_state = 37
+						DEN = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						set_cosmetic_tag = DEN_reichskommissariat
+						create_country_leader = {
+							name = "Josef Terboven"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				DEN = {
+					transfer_state = 99
+					transfer_state = 37
+					add_war_support = 30
+					set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = DEN autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_albanien = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 44
+			controls_state = 805
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = ALB
+					NOT = { ALB = { has_government = fascism } }
+				}
+				hidden_effect = {
+					ALB = {
+						set_state_controller = 44
+						set_state_controller = 805
+					}
+				}
+				ALB = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 44
+						transfer_state = 805
+						ALB = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						set_cosmetic_tag = ALB_reichskommissariat
+						create_country_leader = {
+							name = "Josef Terboven"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				ALB = {
+					transfer_state = 44
+					transfer_state = 805
+					add_war_support = 30
+					set_cosmetic_tag = ALB_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = ALB autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_griechenland = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 47
+			controls_state = 186
+			controls_state = 182
+			controls_state = 185
+			controls_state = 731
+			controls_state = 184
+			controls_state = 187
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = GRE
+					NOT = { GRE = { has_government = fascism } }
+				}
+				hidden_effect = {
+					GRE = {
+						set_state_controller = 47
+						set_state_controller = 186
+						set_state_controller = 182
+						set_state_controller = 185
+						set_state_controller = 731
+						set_state_controller = 184
+						set_state_controller = 187
+					}
+				}
+				GRE = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 47
+						transfer_state = 186
+						transfer_state = 182
+						transfer_state = 185
+						transfer_state = 731
+						transfer_state = 184
+						transfer_state = 187
+						GRE = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat }
+						}
+						set_cosmetic_tag = GRE_reichskommissariat
+						create_country_leader = {
+							name = "Josef Terboven"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				GRE = {
+					transfer_state = 47
+					transfer_state = 186
+					transfer_state = 182
+					transfer_state = 185
+					transfer_state = 731
+					transfer_state = 184
+					transfer_state = 187
+					add_war_support = 30
+					set_cosmetic_tag = GRE_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = GRE autonomy_state = autonomy_reichskommissariat }
+			}
+		}
+	}
+
+	GER_reichskommissariat_kaukasus = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 229
+			controls_state = 230
+			controls_state = 231
+			controls_state = 232
+			controls_state = 233
+			controls_state = 234
+			controls_state = 235
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			229 = { add_core_of = ARM }
+			230 = { add_core_of = ARM }
+			231 = { add_core_of = ARM }
+			232 = { add_core_of = ARM }
+			233 = { add_core_of = ARM }
+			234 = { add_core_of = ARM }
+			235 = { add_core_of = ARM }
+
+			if = {
+				limit = {
+					country_exists = ARM
+					NOT = { ARM = { has_government = fascism } }
+				}
+				hidden_effect = {
+					ARM = {
+						set_state_controller = 229
+						set_state_controller = 230
+						set_state_controller = 231
+						set_state_controller = 232
+						set_state_controller = 233
+						set_state_controller = 234
+						set_state_controller = 235
+					}
+				}
+				ARM = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 229
+						transfer_state = 230
+						transfer_state = 231
+						transfer_state = 232
+						transfer_state = 233
+						transfer_state = 234
+						transfer_state = 235
+						ARM = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat }
+						}
+						set_cosmetic_tag = ARM_reichskommissariat
+						create_country_leader = {
+							name = "Josef Terboven"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				ARM = {
+					transfer_state = 229
+					transfer_state = 230
+					transfer_state = 231
+					transfer_state = 232
+					transfer_state = 233
+					transfer_state = 234
+					transfer_state = 235
+					add_war_support = 30
+					set_cosmetic_tag = ARM_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = ARM autonomy_state = autonomy_reichskommissariat }
+			}
+		}
+	}
+
+	GER_reichskommissariat_italien = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 158
+			controls_state = 159
+			controls_state = 160
+			controls_state = 161
+			controls_state = 162
+			controls_state = 2
+			controls_state = 157
+			controls_state = 156
+			controls_state = 117
+			controls_state = 156
+			controls_state = 115
+			controls_state = 114
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+
+			if = {
+				limit = {
+					country_exists = ITA
+					NOT = { ITA = { has_government = fascism } }
+				}
+				hidden_effect = {
+					ITA = {
+						set_state_controller = 156
+						set_state_controller = 157
+						set_state_controller = 158
+						set_state_controller = 159
+						set_state_controller = 160
+						set_state_controller = 161
+						set_state_controller = 162
+						set_state_controller = 114
+						set_state_controller = 115
+						set_state_controller = 117
+						set_state_controller = 2
+					}
+				}
+				ITA = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 156
+						transfer_state = 157
+						transfer_state = 158
+						transfer_state = 159
+						transfer_state = 160
+						transfer_state = 161
+						transfer_state = 162
+						transfer_state = 114
+						transfer_state = 115
+						transfer_state = 117
+						transfer_state = 2
+						ITA = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat }
+						}
+						set_cosmetic_tag = ITA_reichskommissariat
+						create_country_leader = {
+							name = "Josef Terboven"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				ITA = {
+					transfer_state = 156
+					transfer_state = 157
+					transfer_state = 158
+					transfer_state = 159
+					transfer_state = 160
+					transfer_state = 161
+					transfer_state = 162
+					transfer_state = 114
+					transfer_state = 115
+					transfer_state = 117
+					transfer_state = 2
+					add_war_support = 30
+					set_cosmetic_tag = ITA_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = ITA autonomy_state = autonomy_reichskommissariat }
+			}
+		}
+	}
+
+	GER_reichskommissariat_spanien = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 171
+			controls_state = 790
+			controls_state = 174
+			controls_state = 791
+			controls_state = 176
+			controls_state = 788
+			controls_state = 41
+			controls_state = 793
+			controls_state = 166
+			controls_state = 794
+			controls_state = 167
+			controls_state = 165
+			controls_state = 168
+			controls_state = 175
+			controls_state = 789
+			controls_state = 173
+			controls_state = 170
+			controls_state = 169
+			controls_state = 177
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+
+			if = {
+				limit = {
+					country_exists = SPA
+					NOT = { SPA = { has_government = fascism } }
+				}
+				hidden_effect = {
+					SPA = {
+						set_state_controller = 171
+						set_state_controller = 790
+						set_state_controller = 174
+						set_state_controller = 791
+						set_state_controller = 176
+						set_state_controller = 788
+						set_state_controller = 41
+						set_state_controller = 793
+						set_state_controller = 166
+						set_state_controller = 794
+						set_state_controller = 167
+						set_state_controller = 165
+						set_state_controller = 168
+						set_state_controller = 175
+						set_state_controller = 789
+						set_state_controller = 173
+						set_state_controller = 170
+						set_state_controller = 169
+						set_state_controller = 177
+						if = {
+							limit = {
+								GER = { controls_state = 118 }
+							}
+							SPA = { set_state_controller = 118 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 172 }
+							}
+							SPA = { set_state_controller = 172 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 792 }
+							}
+							SPA = { set_state_controller = 792 }
+						}
+					}
+				}
+				SPA = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 171
+						transfer_state = 790
+						transfer_state = 174
+						transfer_state = 791
+						transfer_state = 176
+						transfer_state = 788
+						transfer_state = 41
+						transfer_state = 793
+						transfer_state = 166
+						transfer_state = 794
+						transfer_state = 167
+						transfer_state = 165
+						transfer_state = 168
+						transfer_state = 175
+						transfer_state = 789
+						transfer_state = 173
+						transfer_state = 170
+						transfer_state = 169
+						transfer_state = 177
+						if = {
+							limit = {
+								GER = { controls_state = 118 }
+							}
+							SPA = { transfer_state = 118 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 172 }
+							}
+							SPA = { transfer_state = 172 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 792 }
+							}
+							SPA = { transfer_state = 792 }
+						}
+						SPA = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat }
+						}
+						set_cosmetic_tag = SPA_reichskommissariat
+						create_country_leader = {
+							name = "Josef Terboven"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				SPA = {
+					transfer_state = 171
+					transfer_state = 790
+					transfer_state = 174
+					transfer_state = 791
+					transfer_state = 176
+					transfer_state = 788
+					transfer_state = 41
+					transfer_state = 793
+					transfer_state = 166
+					transfer_state = 794
+					transfer_state = 167
+					transfer_state = 165
+					transfer_state = 168
+					transfer_state = 175
+					transfer_state = 789
+					transfer_state = 173
+					transfer_state = 170
+					transfer_state = 169
+					transfer_state = 177
+					if = {
+						limit = {
+							GER = { controls_state = 118 }
+						}
+						SPA = { transfer_state = 118 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 172 }
+						}
+						SPA = { transfer_state = 172 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 792 }
+						}
+						SPA = { transfer_state = 792 }
+					}
+					add_war_support = 30
+					set_cosmetic_tag = SPA_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = SPA autonomy_state = autonomy_reichskommissariat }
+			}
+		}
+	}
+
+	GER_reichskommissariat_frankreich = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 735
+			controls_state = 1
+			controls_state = 20
+			controls_state = 21
+			controls_state = 22
+			controls_state = 25
+			controls_state = 26
+			controls_state = 31
+			controls_state = 32
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+
+			if = {
+				limit = {
+					country_exists = FRA
+					NOT = { FRA = { has_government = fascism } }
+				}
+				hidden_effect = {
+					FRA = {
+						set_state_controller = 735
+						set_state_controller = 1
+						set_state_controller = 20
+						set_state_controller = 21
+						set_state_controller = 22
+						set_state_controller = 25
+						set_state_controller = 26
+						set_state_controller = 31
+						set_state_controller = 32
+						if = {
+							limit = { GER = { controls_state = 806 }}
+							FRA = { set_state_controller = 806 }
+						}
+						if = {
+							limit = { GER = { controls_state = 19 }}
+							FRA = { set_state_controller = 19 }
+						}
+					}
+				}
+				FRA = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 735
+						transfer_state = 1
+						transfer_state = 20
+						transfer_state = 21
+						transfer_state = 22
+						transfer_state = 25
+						transfer_state = 26
+						transfer_state = 31
+						transfer_state = 32
+						if = {
+							limit = { GER = { controls_state = 806 }}
+							FRA = { transfer_state = 806 }
+						}
+						if = {
+							limit = { GER = { controls_state = 19 }}
+							FRA = { transfer_state = 19 }
+						}
+						FRA = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat }
+						}
+						set_cosmetic_tag = FRA_reichskommissariat
+						create_country_leader = {
+							name = "Josef Terboven"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				FRA = {
+					transfer_state = 735
+					transfer_state = 1
+					transfer_state = 20
+					transfer_state = 21
+					transfer_state = 22
+					transfer_state = 25
+					transfer_state = 26
+					transfer_state = 31
+					transfer_state = 32
+					if = {
+						limit = { GER = { controls_state = 806 }}
+						FRA = { transfer_state = 806 }
+					}
+					if = {
+						limit = { GER = { controls_state = 19 }}
+						FRA = { transfer_state = 19 }
+					}
+					add_war_support = 30
+					set_cosmetic_tag = FRA_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = FRA autonomy_state = autonomy_reichskommissariat }
+			}
+		}
+	}
+
+	GER_reichskommissariat_finnland = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 145
+			controls_state = 111
+			controls_state = 149
+			controls_state = 150
+			controls_state = 148
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			213 = { add_core_of = FIN }
+			215 = { add_core_of = FIN }
+			216 = { add_core_of = FIN }
+			if = {
+				limit = {
+					country_exists = FIN
+					NOT = { FIN = { has_government = fascism } }
+				}
+				hidden_effect = {
+					FIN = {
+						set_state_controller = 145
+						set_state_controller = 111
+						set_state_controller = 149
+						set_state_controller = 150
+						set_state_controller = 148
+						if = {
+							limit = {
+								GER = { controls_state = 147 }
+							}
+							FIN = { transfer_state = 147 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 722 }
+							}
+							FIN = { transfer_state = 722 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 146 }
+							}
+							FIN = { transfer_state = 146 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 213 }
+							}
+							FIN = { transfer_state = 213 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 215 }
+							}
+							FIN = { transfer_state = 215 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 216 }
+							}
+							FIN = { transfer_state = 216 }
+						}
+					}
+				}
+				FIN = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 145
+						transfer_state = 111
+						transfer_state = 149
+						transfer_state = 150
+						transfer_state = 148
+						if = {
+							limit = {
+								GER = { controls_state = 147 }
+							}
+							FIN = { transfer_state = 147 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 722 }
+							}
+							FIN = { transfer_state = 722 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 146 }
+							}
+							FIN = { transfer_state = 146 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 213 }
+							}
+							FIN = { transfer_state = 213 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 215 }
+							}
+							FIN = { transfer_state = 215 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 216 }
+							}
+							FIN = { transfer_state = 216 }
+						}
+						FIN = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						set_cosmetic_tag = FIN_reichskommissariat
+						create_country_leader = {
+							name = "Josef Terboven"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				FIN = {
+					transfer_state = 145
+					transfer_state = 111
+					transfer_state = 149
+					transfer_state = 150
+					transfer_state = 148
+					if = {
+						limit = {
+							GER = { controls_state = 147 }
+						}
+						FIN = { transfer_state = 147 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 722 }
+						}
+						FIN = { transfer_state = 722 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 146 }
+						}
+						FIN = { transfer_state = 146 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 213 }
+						}
+						FIN = { transfer_state = 213 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 215 }
+						}
+						FIN = { transfer_state = 215 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 216 }
+						}
+						FIN = { transfer_state = 216 }
+					}
+					add_war_support = 30
+					set_cosmetic_tag = FIN_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = FIN autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_truthahn = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 341
+			controls_state = 347
+			controls_state = 340
+			controls_state = 339
+			controls_state = 342
+			controls_state = 343
+			controls_state = 49
+			controls_state = 346
+			controls_state = 345
+			controls_state = 344
+			controls_state = 350
+			controls_state = 352
+			controls_state = 800
+			controls_state = 348
+			controls_state = 356
+			controls_state = 798
+			controls_state = 355
+			controls_state = 348
+			controls_state = 349
+			controls_state = 353
+			controls_state = 354
+			controls_state = 800
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = TUR
+					NOT = { TUR = { has_government = fascism } }
+				}
+				hidden_effect = {
+					TUR = {
+						set_state_controller = 341
+						set_state_controller = 347
+						set_state_controller = 340
+						set_state_controller = 339
+						set_state_controller = 342
+						set_state_controller = 343
+						set_state_controller = 49
+						set_state_controller = 346
+						set_state_controller = 345
+						set_state_controller = 344
+						set_state_controller = 350
+						set_state_controller = 352
+						set_state_controller = 800
+						set_state_controller = 348
+						set_state_controller = 356
+						set_state_controller = 798
+						set_state_controller = 355
+						set_state_controller = 348
+						set_state_controller = 349
+						set_state_controller = 353
+						set_state_controller = 354
+						set_state_controller = 800
+					}
+				}
+				TUR = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 341
+						transfer_state = 347
+						transfer_state = 340
+						transfer_state = 339
+						transfer_state = 342
+						transfer_state = 343
+						transfer_state = 49
+						transfer_state = 346
+						transfer_state = 345
+						transfer_state = 344
+						transfer_state = 350
+						transfer_state = 352
+						transfer_state = 800
+						transfer_state = 348
+						transfer_state = 356
+						transfer_state = 798
+						transfer_state = 355
+						transfer_state = 348
+						transfer_state = 349
+						transfer_state = 353
+						transfer_state = 354
+						transfer_state = 800
+						TUR = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat }
+						}
+						set_cosmetic_tag = TUR_reichskommissariat
+						create_country_leader = {
+							name = "Josef Terboven"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				TUR = {
+					transfer_state = 341
+					transfer_state = 347
+					transfer_state = 340
+					transfer_state = 339
+					transfer_state = 342
+					transfer_state = 343
+					transfer_state = 49
+					transfer_state = 346
+					transfer_state = 345
+					transfer_state = 344
+					transfer_state = 350
+					transfer_state = 352
+					transfer_state = 800
+					transfer_state = 348
+					transfer_state = 356
+					transfer_state = 798
+					transfer_state = 355
+					transfer_state = 348
+					transfer_state = 349
+					transfer_state = 353
+					transfer_state = 354
+					transfer_state = 800
+					add_war_support = 30
+					set_cosmetic_tag = TUR_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = TUR autonomy_state = autonomy_reichskommissariat }
+			}
+		}
+	}
+
+	GER_reichskommissariat_bulgarien = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 48
+			controls_state = 801
+			controls_state = 212
+			controls_state = 211
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = BUL
+					NOT = { BUL = { has_government = fascism } }
+				}
+				hidden_effect = {
+					BUL = {
+						set_state_controller = 48
+						set_state_controller = 801
+						set_state_controller = 212
+						set_state_controller = 211
+					}
+				}
+				BUL = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 48
+						transfer_state = 801
+						transfer_state = 212
+						transfer_state = 211
+						BUL = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat }
+						}
+						set_cosmetic_tag = BUL_reichskommissariat
+						create_country_leader = {
+							name = "Josef Terboven"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				BUL = {
+					transfer_state = 48
+					transfer_state = 801
+					transfer_state = 212
+					transfer_state = 211
+					add_war_support = 30
+					set_cosmetic_tag = NOR_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = BUL autonomy_state = autonomy_reichskommissariat }
+			}
+		}
+	}
+
+	GER_reichskommissariat_schweizerisch = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 3
+			controls_state = 151
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = SWI
+					NOT = { SWI = { has_government = fascism } }
+				}
+				hidden_effect = {
+					SWI = {
+						set_state_controller = 3
+						set_state_controller = 151
+					}
+				}
+				SWI = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 3
+						transfer_state = 151
+						SWI = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						set_cosmetic_tag = SWI_reichskommissariat
+						create_country_leader = {
+							name = "Josef Terboven"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				SWI = {
+					transfer_state = 3
+					transfer_state = 151
+					add_war_support = 30
+					set_cosmetic_tag = SWI_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = SWI autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_moskowien = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 236
+			controls_state = 237
+			controls_state = 238
+			controls_state = 218
+			controls_state = 245
+			controls_state = 217
+			controls_state = 260
+			controls_state = 265
+			controls_state = 240
+			controls_state = 220
+			controls_state = 222
+			controls_state = 223
+			controls_state = 224
+			controls_state = 219
+			controls_state = 254
+			controls_state = 257
+			controls_state = 258
+			controls_state = 255
+			controls_state = 252
+			controls_state = 253
+			controls_state = 205
+			controls_state = 242
+			controls_state = 243
+			controls_state = 246
+			controls_state = 247
+			controls_state = 210
+			controls_state = 256
+			controls_state = 250
+			controls_state = 251
+			controls_state = 239
+			controls_state = 401
+			controls_state = 351
+			controls_state = 264
+			controls_state = 248
+			controls_state = 214
+			controls_state = 209
+			controls_state = 263
+			controls_state = 195
+			controls_state = 208
+			controls_state = 244
+			controls_state = 262
+			controls_state = 397
+			controls_state = 400
+			controls_state = 249
+			controls_state = 399
+			controls_state = 398
+			controls_state = 651
+			controls_state = 652
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = SOV
+					NOT = { SOV = { has_government = fascism } }
+				}
+				hidden_effect = {
+					SOV = {
+						set_state_controller = 236
+						set_state_controller = 237
+						set_state_controller = 238
+						set_state_controller = 218
+						set_state_controller = 245
+						set_state_controller = 217
+						set_state_controller = 260
+						set_state_controller = 265
+						set_state_controller = 240
+						set_state_controller = 220
+						set_state_controller = 222
+						set_state_controller = 223
+						set_state_controller = 224
+						set_state_controller = 219
+						set_state_controller = 254
+						set_state_controller = 257
+						set_state_controller = 258
+						set_state_controller = 255
+						set_state_controller = 252
+						set_state_controller = 253
+						set_state_controller = 205
+						set_state_controller = 242
+						set_state_controller = 243
+						set_state_controller = 246
+						set_state_controller = 247
+						set_state_controller = 210
+						set_state_controller = 256
+						set_state_controller = 250
+						set_state_controller = 251
+						set_state_controller = 239
+						set_state_controller = 401
+						set_state_controller = 351
+						set_state_controller = 264
+						set_state_controller = 248
+						set_state_controller = 214
+						set_state_controller = 209
+						set_state_controller = 263
+						set_state_controller = 195
+						set_state_controller = 208
+						set_state_controller = 244
+						set_state_controller = 262
+						set_state_controller = 397
+						set_state_controller = 400
+						set_state_controller = 249
+						set_state_controller = 399
+						set_state_controller = 398
+						set_state_controller = 651
+						set_state_controller = 652
+						if = {
+							limit = { GER = { controls_state = 146 }}
+							SOV = { set_state_controller = 146 }
+						}
+						if = {
+							limit = { GER = { controls_state = 215 }}
+							SOV = { set_state_controller = 215 }
+						}
+						if = {
+							limit = { GER = { controls_state = 216 }}
+							SOV = { set_state_controller = 216 }
+						}
+						if = {
+							limit = { GER = { controls_state = 147 }}
+							SOV = { set_state_controller = 147 }
+						}
+						if = {
+							limit = { GER = { controls_state = 722 }}
+							SOV = { set_state_controller = 722 }
+						}
+						if = {
+							limit = { GER = { controls_state = 213 }}
+							SOV = { set_state_controller = 213 }
+						}
+					}
+				}
+				SOV = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 236
+						transfer_state = 237
+						transfer_state = 238
+						transfer_state = 218
+						transfer_state = 245
+						transfer_state = 217
+						transfer_state = 260
+						transfer_state = 265
+						transfer_state = 240
+						transfer_state = 220
+						transfer_state = 222
+						transfer_state = 223
+						transfer_state = 224
+						transfer_state = 219
+						transfer_state = 254
+						transfer_state = 257
+						transfer_state = 258
+						transfer_state = 255
+						transfer_state = 252
+						transfer_state = 253
+						transfer_state = 205
+						transfer_state = 242
+						transfer_state = 243
+						transfer_state = 246
+						transfer_state = 247
+						transfer_state = 210
+						transfer_state = 256
+						transfer_state = 250
+						transfer_state = 251
+						transfer_state = 239
+						transfer_state = 401
+						transfer_state = 351
+						transfer_state = 264
+						transfer_state = 248
+						transfer_state = 214
+						transfer_state = 209
+						transfer_state = 263
+						transfer_state = 195
+						transfer_state = 208
+						transfer_state = 244
+						transfer_state = 262
+						transfer_state = 397
+						transfer_state = 400
+						transfer_state = 249
+						transfer_state = 399
+						transfer_state = 398
+						transfer_state = 651
+						transfer_state = 652
+						if = {
+							limit = { GER = { controls_state = 146 }}
+							SOV = { transfer_state = 146 }
+						}
+						if = {
+							limit = { GER = { controls_state = 215 }}
+							SOV = { transfer_state = 215 }
+						}
+						if = {
+							limit = { GER = { controls_state = 216 }}
+							SOV = { transfer_state = 216 }
+						}
+						if = {
+							limit = { GER = { controls_state = 147 }}
+							SOV = { transfer_state = 147 }
+						}
+						if = {
+							limit = { GER = { controls_state = 722 }}
+							SOV = { transfer_state = 722 }
+						}
+						if = {
+							limit = { GER = { controls_state = 213 }}
+							SOV = { transfer_state = 213 }
+						}
+						SOV = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						set_cosmetic_tag = SOV_ordenstaat
+						create_country_leader = {
+							name = "Jean-Jacques Thomasset"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				SOV = {
+					transfer_state = 236
+					transfer_state = 237
+					transfer_state = 238
+					transfer_state = 218
+					transfer_state = 245
+					transfer_state = 217
+					transfer_state = 260
+					transfer_state = 265
+					transfer_state = 240
+					transfer_state = 220
+					transfer_state = 222
+					transfer_state = 223
+					transfer_state = 224
+					transfer_state = 219
+					transfer_state = 254
+					transfer_state = 257
+					transfer_state = 258
+					transfer_state = 255
+					transfer_state = 252
+					transfer_state = 253
+					transfer_state = 205
+					transfer_state = 242
+					transfer_state = 243
+					transfer_state = 246
+					transfer_state = 247
+					transfer_state = 210
+					transfer_state = 256
+					transfer_state = 250
+					transfer_state = 251
+					transfer_state = 239
+					transfer_state = 401
+					transfer_state = 351
+					transfer_state = 264
+					transfer_state = 248
+					transfer_state = 214
+					transfer_state = 209
+					transfer_state = 263
+					transfer_state = 195
+					transfer_state = 208
+					transfer_state = 244
+					transfer_state = 262
+					transfer_state = 397
+					transfer_state = 400
+					transfer_state = 249
+					transfer_state = 399
+					transfer_state = 398
+					transfer_state = 651
+					transfer_state = 652
+					if = {
+						limit = { GER = { controls_state = 146 }}
+						SOV = { transfer_state = 146 }
+					}
+					if = {
+						limit = { GER = { controls_state = 215 }}
+						SOV = { transfer_state = 215 }
+					}
+					if = {
+						limit = { GER = { controls_state = 216 }}
+						SOV = { transfer_state = 216 }
+					}
+					if = {
+						limit = { GER = { controls_state = 147 }}
+						SOV = { transfer_state = 147 }
+					}
+					if = {
+						limit = { GER = { controls_state = 722 }}
+						SOV = { transfer_state = 722 }
+					}
+					if = {
+						limit = { GER = { controls_state = 213 }}
+						SOV = { transfer_state = 213 }
+					}
+					add_war_support = 30
+					set_cosmetic_tag = SOV_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = SOV autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_ordenstaat_burgund = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 18
+			controls_state = 17
+			controls_state = 27
+			controls_state = 785
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			17 = { add_core_of = BRG }
+			18 = { add_core_of = BRG }
+			785 = { add_core_of = BRG }
+			27 = { add_core_of = BRG }
+			16 = { add_core_of = BRG }
+			24 = { add_core_of = BRG }
+			33 = { add_core_of = BRG }
+			if = {
+				limit = {
+					country_exists = BRG
+					NOT = { BRG = { has_government = fascism } }
+				}
+				hidden_effect = {
+					BRG = {
+						set_state_controller = 17
+						set_state_controller = 18
+						set_state_controller = 785
+						set_state_controller = 27
+						set_state_controller = 16
+						set_state_controller = 24
+						set_state_controller = 33
+					}
+				}
+				BRG = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 17
+						transfer_state = 18
+						transfer_state = 785
+						transfer_state = 16
+						transfer_state = 27
+						transfer_state = 24
+						transfer_state = 33
+						BRG = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						set_cosmetic_tag = BRG_ordenstaat
+						create_country_leader = {
+							name = "Jean-Jacques Thomasset"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				BRG = {
+					transfer_state = 17
+					transfer_state = 16
+					transfer_state = 24
+					transfer_state = 33
+					transfer_state = 18
+					transfer_state = 785
+					transfer_state = 27
+					add_war_support = 30
+					set_cosmetic_tag = BRG_ordenstaat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = BRG autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_portugal = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 179
+			controls_state = 795
+			controls_state = 112
+			controls_state = 180
+			controls_state = 181
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = POR
+					NOT = { POR = { has_government = fascism } }
+				}
+				hidden_effect = {
+					POR = {
+						set_state_controller = 179
+						set_state_controller = 795
+						set_state_controller = 112
+						set_state_controller = 180
+						set_state_controller = 181
+					}
+				}
+				POR = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 179
+						transfer_state = 795
+						transfer_state = 112
+						transfer_state = 180
+						transfer_state = 181
+						POR = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						set_cosmetic_tag = POR_reichskommissariat
+						create_country_leader = {
+							name = "Jean-Jacques Thomasset"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				POR = {
+					transfer_state = 179
+					transfer_state = 795
+					transfer_state = 112
+					transfer_state = 180
+					transfer_state = 181
+					add_war_support = 30
+					set_cosmetic_tag = POR_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = POR autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_schweden = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 124
+			controls_state = 138
+			controls_state = 139
+			controls_state = 140
+			controls_state = 141
+			controls_state = 38
+			controls_state = 666
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = SWE
+					NOT = { SWE = { has_government = fascism } }
+				}
+				hidden_effect = {
+					SWE = {
+						set_state_controller = 124
+						set_state_controller = 138
+						set_state_controller = 139
+						set_state_controller = 140
+						set_state_controller = 141
+						set_state_controller = 38
+						set_state_controller = 666
+					}
+				}
+				SWE = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 124
+						transfer_state = 138
+						transfer_state = 139
+						transfer_state = 140
+						transfer_state = 141
+						transfer_state = 38
+						transfer_state = 666
+						SWE = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						set_cosmetic_tag = SWE_reichskommissariat
+						create_country_leader = {
+							name = "Jean-Jacques Thomasset"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				SWE = {
+					transfer_state = 124
+					transfer_state = 138
+					transfer_state = 139
+					transfer_state = 140
+					transfer_state = 141
+					transfer_state = 38
+					transfer_state = 666
+					add_war_support = 30
+					set_cosmetic_tag = SWE_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = SWE autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_Großbritannien = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 123
+			controls_state = 338
+			controls_state = 127
+			controls_state = 126
+			controls_state = 125
+			controls_state = 128
+			controls_state = 129
+			controls_state = 122
+			controls_state = 130
+			controls_state = 131
+			controls_state = 132
+			controls_state = 120
+			controls_state = 121
+			controls_state = 136
+			controls_state = 133
+			controls_state = 119
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = ENG
+					NOT = { ENG = { has_government = fascism } }
+				}
+				hidden_effect = {
+					ENG = {
+						set_state_controller = 123
+						set_state_controller = 338
+						set_state_controller = 127
+						set_state_controller = 126
+						set_state_controller = 125
+						set_state_controller = 128
+						set_state_controller = 129
+						set_state_controller = 122
+						set_state_controller = 130
+						set_state_controller = 131
+						set_state_controller = 132
+						set_state_controller = 120
+						set_state_controller = 121
+						set_state_controller = 136
+						set_state_controller = 133
+						set_state_controller = 119
+					}
+				}
+				ENG = {
+					start_civil_war = { 
+						ideology = fascism 
+						size = 1 
+					
+						transfer_state = 123
+						transfer_state = 338
+						transfer_state = 127
+						transfer_state = 126
+						transfer_state = 125
+						transfer_state = 128
+						transfer_state = 129
+						transfer_state = 122
+						transfer_state = 130
+						transfer_state = 131
+						transfer_state = 132
+						transfer_state = 120
+						transfer_state = 121
+						transfer_state = 136
+						transfer_state = 133
+						transfer_state = 119
+						ENG = {
+							puppet = PREV
+							set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+						}
+						set_cosmetic_tag = ENG_reichskommissariat
+						create_country_leader = {
+							name = "Jean-Jacques Thomasset"
+							desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+							picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+							}
+						}
+					}
+				}
+			}
+			else = {
+				ENG = {
+					transfer_state = 123
+					transfer_state = 338
+					transfer_state = 127
+					transfer_state = 126
+					transfer_state = 125
+					transfer_state = 128
+					transfer_state = 129
+					transfer_state = 122
+					transfer_state = 130
+					transfer_state = 131
+					transfer_state = 132
+					transfer_state = 120
+					transfer_state = 121
+					transfer_state = 136
+					transfer_state = 133
+					transfer_state = 119
+					add_war_support = 30
+					set_cosmetic_tag = ENG_reichskommissariat
+					create_country_leader = {
+						name = "Hermann von Hanneken"
+						desc = "German General"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = ENG autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+
+	GER_reichskommissariat_niederlande = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 7
+			controls_state = 35
+			controls_state = 36
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = HOL
+					NOT = { HOL = { has_government = fascism } }
+				}
+				hidden_effect = {
+					HOL = {
+						set_state_controller = 7
+						set_state_controller = 35
+						set_state_controller = 36
+					}
+				}
+				HOL = {
+					start_civil_war = { ideology = fascism size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = HOL
+						has_government = fascism
+					}
+					transfer_state = 7
+					transfer_state = 35
+					transfer_state = 36
+					GER = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					
+					set_cosmetic_tag = HOL_reichskommissariat
+					create_country_leader = {
+						name = "Arthur Seyss-Inquart"
+						desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				HOL = {
+					transfer_state = 7
+					transfer_state = 35
+					transfer_state = 36
+					set_cosmetic_tag = HOL_reichskommissariat
+					create_country_leader = {
+						name = "Arthur Seyss-Inquart"
+						desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = HOL autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_irland = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 134
+			controls_state = 135
+			controls_state = 113
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = IRE
+					NOT = { IRE = { has_government = fascism } }
+				}
+				hidden_effect = {
+					IRE = {
+						set_state_controller = 134
+						set_state_controller = 135
+						set_state_controller = 113
+					}
+				}
+				IRE = {
+					start_civil_war = { ideology = fascism size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = IRE
+						has_government = fascism
+					}
+					transfer_state = 134
+					transfer_state = 135
+					transfer_state = 113
+					GER = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					
+					set_cosmetic_tag = IRE_reichskommissariat
+					create_country_leader = {
+						name = "Arthur Seyss-Inquart"
+						desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				IRE = {
+					transfer_state = 134
+					transfer_state = 135
+					transfer_state = 113
+					set_cosmetic_tag = IRE_reichskommissariat
+					create_country_leader = {
+						name = "Arthur Seyss-Inquart"
+						desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = IRE autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+
+	GER_reichskommissariat_bohmen_und_mahren = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 9
+			controls_state = 75
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				FRA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = CZE
+				}
+				hidden_effect = {
+					CZE = {
+						set_state_controller = 9
+						set_state_controller = 75
+					}
+				}
+				CZE = {
+					start_civil_war = { ideology = fascism size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = CZE
+						has_government = fascism
+					}
+					transfer_state = 9
+					transfer_state = 75
+					CZE = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					set_cosmetic_tag = CZE_reichskommissariat
+					create_country_leader = {
+						name = "Reinhard Heydrich"
+						desc = "POLITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+					hidden_effect = {
+					}
+				}
+			}
+			else = {
+				CZE = {
+					transfer_state = 9
+					transfer_state = 75
+					set_cosmetic_tag = CZE_reichskommissariat
+					create_country_leader = {
+						name = "Reinhard Heydrich"
+						desc = "POLITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = CZE autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	
+	GER_reichskommissariat_baskisch = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			if = {
+				OR = {
+						GER = { controls_state = 19 }
+						GER = { controls_state = 806 }
+						GER = { controls_state = 172 }
+						GER = { controls_state = 792 }
+				}
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			19 = { add_core_of = NAV }
+			if = {
+				limit = {
+					country_exists = NAV
+					NOT = { NAV = { has_government = fascism } }
+				}
+				hidden_effect = {
+					NAV = {
+						if = {
+							limit = { GER = { controls_state = 19 } }
+							NAV = { transfer_state = 19 }
+						}
+						if = {
+							limit = { GER = { controls_state = 806 } }
+							NAV = { transfer_state = 806 }
+						}
+						if = {
+							limit = { GER = { controls_state = 172 } }
+							NAV = { transfer_state = 172 }
+						}
+						if = {
+							limit = { GER = { controls_state = 792 } }
+							NAV = { transfer_state = 792 }
+						}
+					}
+				}
+				NAV = {
+					start_civil_war = { ideology = fascism size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = NAV
+						has_government = fascism
+					}
+					NAV = {
+						if = {
+							limit = { GER = { controls_state = 19 } }
+							NAV = { transfer_state = 19 }
+						}
+						if = {
+							limit = { GER = { controls_state = 806 } }
+							NAV = { transfer_state = 806 }
+						}
+						if = {
+							limit = { GER = { controls_state = 172 } }
+							NAV = { transfer_state = 172 }
+						}
+						if = {
+							limit = { GER = { controls_state = 792 } }
+							NAV = { transfer_state = 792 }
+						}
+					}
+					GER = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					
+					set_cosmetic_tag = NAV_reichskommissariat
+					create_country_leader = {
+						name = "Arthur Seyss-Inquart"
+						desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+			}
+			else = {
+				NAV = {
+					NAV = {
+						if = {
+							limit = { GER = { controls_state = 19 } }
+							NAV = { transfer_state = 19 }
+						}
+						if = {
+							limit = { GER = { controls_state = 806 } }
+							NAV = { transfer_state = 806 }
+						}
+						if = {
+							limit = { GER = { controls_state = 172 } }
+							NAV = { transfer_state = 172 }
+						}
+						if = {
+							limit = { GER = { controls_state = 792 } }
+							NAV = { transfer_state = 792 }
+						}
+					}
+					set_cosmetic_tag = NAV_reichskommissariat
+					create_country_leader = {
+						name = "Arthur Seyss-Inquart"
+						desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+						picture = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = NAV autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+
+	GER_reichskommissariat_slowakien = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 70
+			controls_state = 71
+			controls_state = 73
+			controls_state = 664
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				FRA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			70 = { add_core_of = SLO }
+			71 = { add_core_of = SLO }
+			73 = { add_core_of = SLO }
+			664 = { add_core_of = SLO }
+			if = {
+				limit = {
+					country_exists = SLO
+				}
+				hidden_effect = {
+					SLO = {
+						set_state_controller = 70
+						set_state_controller = 71
+						set_state_controller = 73
+						set_state_controller = 664
+					}
+				}
+				SLO = {
+					start_civil_war = { ideology = fascism size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = SLO
+						has_government = fascism
+					}
+					transfer_state = 70
+					transfer_state = 71
+					transfer_state = 73
+					transfer_state = 664
+					SLO = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					set_cosmetic_tag = SLO_reichskommissariat
+					create_country_leader = {
+						name = "Vojtech Tuka"
+						desc = "POLITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+					hidden_effect = {
+					}
+				}
+			}
+			else = {
+				SLO = {
+					transfer_state = 70
+					transfer_state = 71
+					transfer_state = 73
+					transfer_state = 664
+					set_cosmetic_tag = SLO_reichskommissariat
+					create_country_leader = {
+						name = "Vojtech Tuka"
+						desc = "POLITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = SLO autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_ungarn = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 155
+			controls_state = 154
+			controls_state = 43
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				FRA = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = HUN
+				}
+				hidden_effect = {
+					HUN = {
+						set_state_controller = 155
+						set_state_controller = 154
+						set_state_controller = 43
+					}
+				}
+				HUN = {
+					start_civil_war = { ideology = fascism size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = HUN
+						has_government = fascism
+					}
+					transfer_state = 155
+					transfer_state = 154
+					transfer_state = 43
+					HUN = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					set_cosmetic_tag = HUN_reichskommissariat
+					create_country_leader = {
+						name = "Someone"
+						desc = "POLITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+					hidden_effect = {
+					}
+				}
+			}
+			else = {
+				HUN = {
+					transfer_state = 155
+					transfer_state = 154
+					transfer_state = 43
+					set_cosmetic_tag = HUN_reichskommissariat
+					create_country_leader = {
+						name = "Someone"
+						desc = "POLITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = HUN autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_rumanien = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 46
+			controls_state = 81
+			controls_state = 79
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				HUN = { is_puppet_of = GER }
+				SOV = { exists = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = ROM
+				}
+				hidden_effect = {
+					ROM = {
+						set_state_controller = 46
+						set_state_controller = 81
+						set_state_controller = 79
+						if = {
+							limit = {
+								GER = { controls_state = 84 }
+							}
+							ROM = { set_state_controller = 84 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 82 }
+							}
+							ROM = { set_state_controller = 82 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 83 }
+							}
+							ROM = { set_state_controller = 83 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 76 }
+							}
+							ROM = { set_state_controller = 76 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 80 }
+							}
+							ROM = { set_state_controller = 80 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 78 }
+							}
+							ROM = { set_state_controller = 78 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 77 }
+							}
+							ROM = { set_state_controller = 77 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 766 }
+							}
+							ROM = { set_state_controller = 766 }
+						}
+					}
+				}
+				ROM = {
+					start_civil_war = { ideology = fascism size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = ROM
+						has_government = fascism
+					}
+					transfer_state = 46
+					transfer_state = 81
+					transfer_state = 79
+					if = {
+						limit = {
+							GER = { controls_state = 84 }
+						}
+						ROM = { transfer_state = 84 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 82 }
+						}
+						ROM = { transfer_state = 82 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 83 }
+						}
+						ROM = { transfer_state = 83 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 76 }
+						}
+						ROM = { transfer_state = 76 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 80 }
+						}
+						ROM = { transfer_state = 80 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 78 }
+						}
+						ROM = { transfer_state = 78 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 77 }
+						}
+						ROM = { transfer_state = 77 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 766 }
+						}
+						ROM = { transfer_state = 766 }
+					}
+					ROM = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					set_cosmetic_tag = ROM_reichskommissariat
+					create_country_leader = {
+						name = "Someone"
+						desc = "POLITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+					hidden_effect = {
+					}
+				}
+			}
+			else = {
+				ROM = {
+					transfer_state = 46
+					transfer_state = 81
+					transfer_state = 79
+					if = {
+						limit = {
+							GER = { controls_state = 84 }
+						}
+						ROM = { transfer_state = 84 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 82 }
+						}
+						ROM = { transfer_state = 82 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 83 }
+						}
+						ROM = { transfer_state = 83 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 76 }
+						}
+						ROM = { transfer_state = 76 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 80 }
+						}
+						ROM = { transfer_state = 80 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 78 }
+						}
+						ROM = { transfer_state = 78 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 77 }
+						}
+						ROM = { transfer_state = 77 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 766 }
+						}
+						ROM = { transfer_state = 766 }
+					}
+					set_cosmetic_tag = ROM_reichskommissariat
+					create_country_leader = {
+						name = "Someone"
+						desc = "POLITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = ROM autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_serbien = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 107
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				SER = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			107 = { add_core_of = SER }
+			108 = { add_core_of = SER }
+			105 = { add_core_of = SER }
+			106 = { add_core_of = SER }
+			803 = { add_core_of = SER }
+			802 = { add_core_of = SER }
+			if = {
+				limit = {
+					country_exists = SER
+				}
+				hidden_effect = {
+					SER = {
+						set_state_controller = 107
+						if = {
+							limit = {
+								GER = { controls_state = 108 }
+							}
+							SER = { transfer_state = 108 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 803 }
+							}
+							SER = { transfer_state = 803 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 802 }
+							}
+							SER = { transfer_state = 802 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 105 }
+							}
+							SER = { transfer_state = 105 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 106 }
+							}
+							SER = { transfer_state = 106 }
+						}
+					}
+				}
+				SER = {
+					start_civil_war = { ideology = fascism size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = SER
+						has_government = fascism
+					}
+					transfer_state = 107
+					if = {
+						limit = {
+							GER = { controls_state = 108 }
+						}
+						SER = { transfer_state = 108 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 803 }
+						}
+						SER = { transfer_state = 803 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 802 }
+						}
+						SER = { transfer_state = 802 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 105 }
+						}
+						SER = { transfer_state = 105 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 106 }
+						}
+						SER = { transfer_state = 106 }
+					}
+					SER = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					set_cosmetic_tag = SER_reichskommissariat
+					create_country_leader = {
+						name = "Him"
+						desc = "SERITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+					hidden_effect = {
+					}
+				}
+			}
+			else = {
+				SER = {
+					transfer_state = 107
+					if = {
+						limit = {
+							GER = { controls_state = 108 }
+						}
+						SER = { transfer_state = 108 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 803 }
+						}
+						SER = { transfer_state = 803 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 802 }
+						}
+						SER = { transfer_state = 802 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 105 }
+						}
+						SER = { transfer_state = 105 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 106 }
+						}
+						SER = { transfer_state = 106 }
+					}
+					set_cosmetic_tag = SER_reichskommissariat
+					create_country_leader = {
+						name = "Him"
+						desc = "POLITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = SER autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_kroatien = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 109
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				YUG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			104 = { add_core_of = CRO }
+			if = {
+				limit = {
+					country_exists = CRO
+				}
+				hidden_effect = {
+					CRO = {
+						set_state_controller = 109
+						if = {
+							limit = {
+								GER = { controls_state = 104 }
+							}
+							CRO = { transfer_state = 104 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 103 }
+							}
+							CRO = { transfer_state = 103 }
+						}
+						if = {
+							limit = {
+								GER = { controls_state = 804 }
+							}
+							CRO = { transfer_state = 804 }
+						}
+					}
+				}
+				CRO = {
+					start_civil_war = { ideology = fascism size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = CRO
+						has_government = fascism
+					}
+					transfer_state = 109
+					if = {
+						limit = {
+							GER = { controls_state = 104 }
+						}
+						CRO = { transfer_state = 104 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 103 }
+						}
+						CRO = { transfer_state = 103 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 804 }
+						}
+						CRO = { transfer_state = 804 }
+					}
+					CRO = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					set_cosmetic_tag = CRO_reichskommissariat
+					create_country_leader = {
+						name = "Him"
+						desc = "CROITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+					hidden_effect = {
+					}
+				}
+			}
+			else = {
+				CRO = {
+					transfer_state = 109
+					if = {
+						limit = {
+							GER = { controls_state = 104 }
+						}
+						CRO = { transfer_state = 104 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 103 }
+						}
+						CRO = { transfer_state = 103 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 804 }
+						}
+						CRO = { transfer_state = 804 }
+					}
+					set_cosmetic_tag = CRO_reichskommissariat
+					create_country_leader = {
+						name = "Him"
+						desc = "POLITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = CRO autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_siebenburgen = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 764
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = TRA
+				}
+				hidden_effect = {
+					TRA = {
+						set_state_controller = 764
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 82 }
+						}
+						TRA = { transfer_state = 82 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 83 }
+						}
+						TRA = { transfer_state = 83 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 84 }
+						}
+						TRA = { transfer_state = 84 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 76 }
+						}
+						TRA = { transfer_state = 76 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 45 }
+						}
+						TRA = { transfer_state = 45 }
+					}
+				}
+				TRA = {
+					start_civil_war = { ideology = fascism size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = TRA
+						has_government = fascism
+					}
+					transfer_state = 764
+					if = {
+						limit = {
+							GER = { controls_state = 82 }
+						}
+						TRA = { transfer_state = 82 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 83 }
+						}
+						TRA = { transfer_state = 83 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 84 }
+						}
+						TRA = { transfer_state = 84 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 76 }
+						}
+						TRA = { transfer_state = 76 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 45 }
+						}
+						TRA = { transfer_state = 45 }
+					}
+					TRA = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					set_cosmetic_tag = TRA_reichskommissariat
+					create_country_leader = {
+						name = "Josef Grohe"
+						desc = "TRAITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+					hidden_effect = {
+					}
+				}
+			}
+			else = {
+				TRA = {
+					transfer_state = 764
+					if = {
+						limit = {
+							GER = { controls_state = 45 }
+						}
+						TRA = { transfer_state = 45 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 76 }
+						}
+						TRA = { transfer_state = 76 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 82 }
+						}
+						TRA = { transfer_state = 82 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 83 }
+						}
+						TRA = { transfer_state = 83 }
+					}
+					if = {
+						limit = {
+							GER = { controls_state = 84 }
+						}
+						TRA = { transfer_state = 84 }
+					}
+					set_cosmetic_tag = TRA_reichskommissariat
+					create_country_leader = {
+						name = "Josef Grohe"
+						desc = "POLITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = TRA autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+
+	GER_generalgouvernement = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 10
+			controls_state = 88
+			controls_state = 90
+			controls_state = 92
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					country_exists = POL
+				}
+				hidden_effect = {
+					POL = {
+						set_state_controller = 10
+						set_state_controller = 88
+						set_state_controller = 90
+						set_state_controller = 92
+					}
+				}
+				POL = {
+					start_civil_war = { ideology = fascism size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = POL
+						has_government = fascism
+					}
+					transfer_state = 10
+					transfer_state = 88
+					transfer_state = 90
+					transfer_state = 92
+					POL = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					set_cosmetic_tag = POL_reichskommissariat
+					create_country_leader = {
+						name = "Josef Grohe"
+						desc = "POLITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+					hidden_effect = {
+					}
+				}
+			}
+			else = {
+				POL = {
+					transfer_state = 10
+					transfer_state = 88
+					transfer_state = 90
+					transfer_state = 92
+					set_cosmetic_tag = POL_reichskommissariat
+					create_country_leader = {
+						name = "Josef Grohe"
+						desc = "POLITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = POL autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+
+
+	GER_reichskommissariat_belgien_nordfrankreich = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 6
+			controls_state = 29
+			controls_state = 34
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			29 = { add_core_of = BEL }
+			if = {
+				limit = {
+					country_exists = BEL
+					NOT = { BEL = { has_government = fascism } }
+				}
+				hidden_effect = {
+					BEL = {
+						set_state_controller = 6
+						set_state_controller = 34
+					}
+				}
+				BEL = {
+					start_civil_war = { ideology = fascism size = 1 }
+				}
+				random_country = {
+					limit= {
+						original_tag = BEL
+						has_government = fascism
+					}
+					transfer_state = 6
+					transfer_state = 29
+					transfer_state = 34
+					GER = {
+						puppet = PREV
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					set_cosmetic_tag = BEL_reichskommissariat
+					create_country_leader = {
+						name = "Josef Grohe"
+						desc = "POLITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+					hidden_effect = {
+						29 = { add_core_of = PREV }
+					}
+				}
+			}
+			else = {
+				BEL = {
+					transfer_state = 6
+					transfer_state = 29
+					transfer_state = 34
+					set_cosmetic_tag = BEL_reichskommissariat
+					create_country_leader = {
+						name = "Josef Grohe"
+						desc = "POLITICS_JOSEF_GROHE_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+						expire = "1965.1.1"
+						ideology = nazism
+						traits = {
+						}
+					}
+				}
+				set_autonomy = { target = BEL autonomy_state = autonomy_integrated_puppet }
+			}
+		}
+	}
+
+	GER_reichskommissariat_ostland = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 94
+			controls_state = 95
+			controls_state = 96
+			controls_state = 194
+			controls_state = 204
+			controls_state = 206
+			controls_state = 207
+			controls_state = 241
+			controls_state = 11
+			controls_state = 784
+			controls_state = 189
+			controls_state = 12
+			controls_state = 190
+			controls_state = 13
+			controls_state = 191
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				SOV = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			release = BLR
+			BLR = {
+				set_state_controller = 11
+				set_state_controller = 784
+				set_state_controller = 189
+				set_state_controller = 12
+				set_state_controller = 190
+				set_state_controller = 13
+				set_state_controller = 191
+				set_state_controller = 94
+				set_state_controller = 95
+				set_state_controller = 96
+				set_state_controller = 194
+				set_state_controller = 204
+				set_state_controller = 206
+				set_state_controller = 207
+				set_state_controller = 241
+				set_state_controller = 784
+				GER = {
+					puppet = PREV
+					if = {
+						limit = {
+							NOT = { has_dlc = "Death or Dishonor" }
+						}
+						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+					}
+					else = {
+						set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat }
+					}
+				}
+				
+				set_cosmetic_tag = BLR_reichskommissariat
+				create_country_leader = {
+					name = "Hinrich Lohse"
+					desc = "POLITICS_HINRICH_LOHSE_DESC"
+					picture = "gfx/leaders/GER/Portrait_Germany_Generic_3.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+				hidden_effect = {
+					every_state = {
+						limit = {
+							OR = {
+								state = 11
+								state = 189
+								state = 12
+								state = 190
+								state = 13
+								state = 191
+								state = 784
+							}
+							is_owned_by = GER
+						}
+						BLR = {
+							transfer_state = PREV
+						}
+					}
+					11 = { add_core_of = PREV }
+					97 = { add_core_of = PREV }
+					189 = { add_core_of = PREV }
+					12 = { add_core_of = PREV }
+					190 = { add_core_of = PREV }
+					13 = { add_core_of = PREV }
+					191 = { add_core_of = PREV }
+					784 = { add_core_of = PREV }
+				}
+			}
+		}
+	}
+
+	GER_reichskommissariat_ukraine = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 93
+			controls_state = 91
+			controls_state = 89
+			controls_state = 199
+			controls_state = 201
+			controls_state = 198
+			controls_state = 202
+			controls_state = 193
+			controls_state = 192
+			controls_state = 203
+			controls_state = 197
+			controls_state = 225
+			controls_state = 259
+			controls_state = 226
+			controls_state = 196
+			controls_state = 200
+			controls_state = 221
+			controls_state = 228
+			controls_state = 227
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				SOV = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			release_on_controlled = UKR
+			UKR = {
+				set_state_controller = 93
+				set_state_controller = 91
+				set_state_controller = 89
+				set_state_controller = 199
+				set_state_controller = 201
+				set_state_controller = 198
+				set_state_controller = 202
+				set_state_controller = 193
+				set_state_controller = 192
+				set_state_controller = 203
+				set_state_controller = 197
+				set_state_controller = 225
+				set_state_controller = 259
+				set_state_controller = 226
+				set_state_controller = 196
+				set_state_controller = 200
+				set_state_controller = 221
+				set_state_controller = 228
+				set_state_controller = 227
+				GER = {
+					puppet = PREV
+					set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+				}
+				set_cosmetic_tag = UKR_reichskommissariat
+				create_country_leader = {
+					name = "Erich Koch"
+					desc = "POLITICS_HINRICH_LOHSE_DESC"
+					picture = "gfx/leaders/Europe/portrait_europe_generic_6.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = {
+					}
+				}
+			}
+		}
+	}
+}
+
+political_actions = {
+
+	# Reinstate Wilhelm IV into the line of succession
+	reinstate_wilhelm_iv_succession_rights = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_war = no
+			has_government = neutrality
+			has_country_flag = backed_down_netherlands_kaiser
+		}
+
+		complete_effect = {
+			add_stability = -0.10
+			add_popularity = { ideology = neutrality popularity = -0.05 }
+			custom_effect_tooltip = reinstate_wilhelm_iv_succession_rights_tt
+			hidden_effect = {
+				set_country_flag = reinstated_wilhelm_iv_succession_rights
+			}
+		}
+	}
+	
+	# Agnatic-Cognatic Primogeniture
+	modernize_the_succession_laws = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_war = no
+			has_government = neutrality
+			has_country_flag = reinstated_wilhelm_iv_succession_rights
+		}
+
+		complete_effect = {
+			add_stability = 0.05
+			custom_effect_tooltip = modernize_the_succession_laws_tt
+			hidden_effect = {
+				set_country_flag = modernized_succession_laws
+			}
+		}
+	}
+
+	recall_von_lettow_vorbeck = {
+
+		allowed = {
+			original_tag = GER
+		}
+		available = {
+			has_civil_war = no
+		}
+		visible = {
+			OR = {
+				has_country_leader = { ruling_only = yes name = "Wilhelm II" }
+				has_country_leader = { ruling_only = yes name = "Wilhelm III" }
+				has_country_leader = { ruling_only = yes name = "Victoria" }
+			}
+		}
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			create_corps_commander = {
+				name = "Paul von Lettow-Vorbeck"
+				gfx = GFX_portrait_ger_von_lettow_vorbeck
+				traits = { trickster war_hero media_personality jungle_rat}
+				skill = 4
+				id = 499
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 5
+			}
+		}
+	}
+
+	# Safety regulations
+	GER_sharpen_air_safety_regulations = {
+
+		allowed = {
+			original_tag = GER
+			has_dlc = "Waking the Tiger"
+		}
+
+		available = {
+			
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_government = neutrality
+		}
+
+		complete_effect = {
+			add_timed_idea = { idea = GER_air_safety_regulations days = 1095 }
+			set_global_flag = GER_air_safety_regulations_flag
+		}
+	}
+}
+
+foreign_politics = {
+	
+	# Titles Deprivation Act 1917
+	request_restoration_of_british_titles = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			ENG = { has_opinion = { target = GER value > 99 } }
+			custom_trigger_tooltip = {
+				tooltip = hindenburg_destroyed_tt
+				NOT = { has_global_flag = hindenburg_destroyed }
+			}
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_war = no
+			has_government = neutrality
+			has_completed_focus = GER_ally_the_shade
+			has_country_flag = modernized_succession_laws
+		}
+
+		complete_effect = {
+			ENG = { country_event = { id = wtt_germany.999 days = 1 } }
+			custom_effect_tooltip = request_restoration_of_british_titles_tt
+			hidden_effect = { set_global_flag = hindenburg_event_in_progress }
+		}
+	}
+
+	GER_request_polish_war_participation = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war_with = SOV
+			NOT = { is_in_faction_with = POL }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_country_flag = poland_traded_danzig
+			has_completed_focus = GER_tackle_the_communist_threat
+		}
+
+		complete_effect = {
+			POL = { country_event = { id = wtt_germany.65 hours = 6 } }
+		}
+
+	}
+}
+
+#Category only allowed for GER
+GER_military_buildup = {
+
+	GER_plan_z = {
+
+		icon = generic_naval
+
+		available = {
+			has_navy_size = {
+				unit = battleship
+				size > 9
+			}
+			has_navy_size = {
+				unit = battle_cruiser
+				size > 2
+			}
+			has_navy_size = {
+				unit = carrier
+				size > 3
+			}
+			has_navy_size = {
+				unit = heavy_cruiser
+				size > 19
+			}
+			has_navy_size = {
+				unit = light_cruiser
+				size > 19
+			}
+			has_navy_size = {
+				unit = destroyer
+				size > 99
+			}
+		}
+
+		fire_only_once = yes
+		days_mission_timeout = 1800
+		is_good = no
+		activation = {
+			has_completed_focus = GER_plan_z
+		}
+
+		
+		visible = {
+			has_completed_focus = GER_plan_z
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			navy_experience = 150
+		}
+
+		
+	}
+
+	GER_jaegernotprogramm = {
+
+		icon = generic_air
+
+		available = {
+			has_war = yes
+			AND = {
+				has_deployed_air_force_size = {
+					type = fighter
+					size < 750
+				}
+				has_equipment = {
+					fighter_equipment < 250
+				}
+			}
+			NOT = {
+				has_idea = GER_jaegernotprogramm
+			}
+		}
+
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_war = yes
+			AND = {
+				has_deployed_air_force_size = {
+					type = fighter
+					size < 750
+				}
+				has_equipment = {
+					fighter_equipment < 250
+				}
+			}
+			NOT = {
+				has_idea = GER_jaegernotprogramm
+			}
+		}
+
+		complete_effect = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_timed_idea = { idea = GER_jaegernotprogramm days = 90 }
+		}
+	}
+}
+
+special_projects = {
+	GER_begin_heavy_water_production = {
+		allowed = { 
+			original_tag = GER 
+			has_dlc = "La Resistance"
+		}
+		available = {
+			110 = {
+				CONTROLLER = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		visible = { has_tech = atomic_research }
+		cost = 0
+		ai_will_do = {
+			factor = 5 
+		}
+		cancel_trigger = { NOT = { has_global_flag = GER_heavy_water_production_underway } } #can be removed via intelligence ops
+		days_remove = 365
+		remove_effect = {
+			add_tech_bonus = {
+				name = GER_heavy_water
+				category = nuclear
+				uses = 2
+				bonus = 2
+			}
+		}
+		complete_effect = { set_global_flag = GER_heavy_water_production_underway }
+	}
+	GER_dismantle_maginot = {
+
+		icon = generic_construction
+
+		available = {
+			#has_war = yes
+			controls_state = 28
+			if = {
+				limit = {
+					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+				}
+				controls_state = 18
+				controls_state = 29
+			}
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			#has_war = yes
+			controls_state = 28
+			if = {
+				limit = {
+					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+				}
+				controls_state = 18
+				controls_state = 29
+			}
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			28 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+				}
+				18 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 2
+						}
+					}
+				}
+				29 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 2
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_idea = FRA_protected_by_the_maginot_line
+				}
+				remove_ideas = FRA_protected_by_the_maginot_line
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = { FRA = { has_completed_focus = FRA_extend_the_maginot_line } }
+				add_timed_idea = { idea = GER_dismantle_maginot days = 270 }
+				else = {
+					add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
+				}
+			}
+		}
+	}	
+	GER_dismantle_czechoslovakian_forts = {
+
+		icon = generic_construction
+
+		available = {
+			#has_war = yes
+			controls_state = 69 # Sudetenland
+			controls_state = 74 # Eastern Sudetenland
+			controls_state = 9 # Bohemia
+			controls_state = 75 # Moravia
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			#has_war = yes
+			controls_state = 69 # Sudetenland
+			controls_state = 74 # Eastern Sudetenland
+			controls_state = 9 # Bohemia
+			controls_state = 75 # Moravia
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			69 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 1
+					}
+				}
+			}
+			74 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 1
+					}
+				}
+			}
+			9 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 1
+					}
+				}
+			}
+			75 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					72 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+					71 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				72 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 1
+						}
+					}
+				}
+				71 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 1
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					70 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				70 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 1
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					73 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+					664 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				73 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 1
+						}
+					}
+				}
+				664 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 1
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
+		}
+	}	
+}
+
+GER_aid_hun_rom_democratic_civil_war = {
+
+	GER_aid_hun_democratic_civil_war = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			HUN = {
+				NOT = { has_government = democratic }
+				NOT = { has_war_with = GER }
+				has_civil_war = yes
+				exists = yes
+				any_enemy_country = {
+					original_tag = HUN
+					has_government = democratic
+				}
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		#Available if democratic civil war
+		visible = {
+			has_completed_focus = GER_align_hungary
+			GER = { has_government = democratic }
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					HUN = { is_in_faction_with = GER }
+				}
+				remove_from_faction = HUN
+				random_country = {
+					limit = {
+						original_tag = HUN
+						has_government = democratic
+						has_war_with = HUN
+					}
+					GER = { add_to_faction = PREV }
+				}
+			}
+			random_country = {
+				limit = {
+					original_tag = HUN
+					has_government = democratic
+					has_war_with = HUN
+				}
+				GER = { add_to_war = { targeted_alliance = PREV enemy = HUN hostility_reason = asked_to_join } }
+			}
+		}
+	}
+
+	GER_aid_rom_democratic_civil_war = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			ROM = {
+				NOT = { has_government = democratic }
+				NOT = { has_war_with = GER }
+				has_civil_war = yes
+				exists = yes
+				any_enemy_country = {
+					original_tag = ROM
+					has_government = democratic
+				}
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		#Available if democratic civil war
+		visible = {
+			has_completed_focus = GER_align_romania
+			GER = { has_government = democratic }
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					ROM = { is_in_faction_with = GER }
+				}
+				remove_from_faction = ROM
+				random_country = {
+					limit = {
+						original_tag = ROM
+						has_government = democratic
+						has_war_with = ROM
+					}
+					GER = { add_to_faction = PREV }
+				}
+			}
+			random_country = {
+				limit = {
+					original_tag = ROM
+					has_government = democratic
+					has_war_with = ROM
+				}
+				GER = { add_to_war = { targeted_alliance = PREV enemy = ROM hostility_reason = asked_to_join } }
+			}
+		}
+	}
+
+}
+
+GER_austro_hungarian_empire = {
+
+	GER_reform_austro_hungarian_empire = {
+
+		allowed = {
+			OR = {
+				original_tag = AUS
+				original_tag = HUN
+				original_tag = CZE
+			}
+		}
+
+		available = {
+			AUS = {
+				OR = {
+					has_government = neutrality
+					neutrality > 0.4
+				}
+			}
+			HUN = {
+				OR = {
+					has_government = neutrality
+					neutrality > 0.4
+				}
+			}
+			CZE = {
+				OR = {
+					has_government = neutrality
+					neutrality > 0.4
+				}
+			}
+		}
+
+		visible = {
+			GER = { 
+				has_completed_focus = GER_rekindle_imperial_sentiment 
+				has_government = neutrality
+			}
+			AUS = {
+				exists = yes
+			}
+			HUN = {
+				exists = yes
+			}
+			CZE = {
+				exists = yes
+			}
+			NOT = { has_global_flag = GER_reformed_austro_hungarian_empire }
+		}
+
+		cost = 0
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				tag = HUN
+			}
+			modifier = {
+				factor = 0
+				tag = CZE
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = GER_reform_austro_hungarian_empire_tt
+			hidden_effect = { set_global_flag = GER_reformed_austro_hungarian_empire }
+			if = {
+				limit = {
+					tag = AUS
+				}
+				HUN = { country_event = { id = wtt_germany.68 hours = 1 } }
+				CZE = { country_event = { id = wtt_germany.68 hours = 3 } }
+			}
+			if = {
+				limit = {
+					tag = HUN
+				}
+				AUS = { country_event = { id = wtt_germany.68 hours = 1 } }
+				CZE = { country_event = { id = wtt_germany.68 hours = 3 } }
+			}
+			if = {
+				limit = {
+					tag = CZE
+				}
+				HUN = { country_event = { id = wtt_germany.68 hours = 1 } }
+				AUS = { country_event = { id = wtt_germany.68 hours = 3 } }
+			}
+		}
+	}
+}

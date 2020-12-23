@@ -1,0 +1,22 @@
+state={
+	id=827
+	name="East_Paris"
+	provinces={
+		11506 
+	}
+	manpower=1217519
+	buildings_max_level_factor=1.000
+	state_category=city
+	history={
+		owner = FRA
+		victory_points = {
+			11506 20
+		}
+		buildings = {
+			infrastructure = 8
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = FRA
+	}
+}

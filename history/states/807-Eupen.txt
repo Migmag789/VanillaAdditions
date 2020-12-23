@@ -1,0 +1,28 @@
+
+state={
+	id=807
+	name="Eupen-Malmedy"
+
+	history={
+		owner = BEL
+		victory_points = {
+			13236 1 
+		}
+		add_core_of = GER
+		buildings = {
+			infrastructure = 6
+
+		}
+		add_core_of = BEL
+
+	}
+
+	provinces={
+		13236 
+	}
+	manpower=28723
+	buildings_max_level_factor=1.000
+	state_category=town
+}
+
+
