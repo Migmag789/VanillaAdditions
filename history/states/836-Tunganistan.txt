@@ -1,0 +1,25 @@
+state={
+	id=836
+	name="Hotan"
+	provinces={
+		4973 10911
+	}
+	state_category = rural
+	history={
+		victory_points = {
+			4973 3 
+		}
+		owner = TNG
+		add_core_of = TNG
+		add_core_of = SIK
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+	manpower=339000
+	buildings_max_level_factor=1.000
+}

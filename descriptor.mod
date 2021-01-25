@@ -1,6 +1,9 @@
-version="1.10"
+version="1.0"
 tags={
-	"Map"
+	"Gameplay"
+	"Fixes"
+	"National Focuses"
+	"Historical"
 }
-name="Mig"
-supported_version="1.10.3"
+name="Vanilla Additions"
+supported_version="1.10.2"
