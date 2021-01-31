@@ -1,0 +1,22 @@
+state={
+	id=852
+	name="South_hebei"
+	provinces={
+		1169 1188 4058 4144 7074 7092 12062 
+	}
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 4
+		}
+
+		1938.10.25 = {
+			controller = JAP
+		}
+	}
+	state_category=rural
+	manpower=8213000
+	buildings_max_level_factor=1.000
+}

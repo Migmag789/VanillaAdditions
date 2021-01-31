@@ -1,0 +1,31 @@
+state={
+	id=838
+	name="Weihai"
+	provinces={
+		4205 
+	}
+	state_category = town
+	history=
+	{
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+			4205 1
+		}
+		buildings = {
+			infrastructure = 3
+			4205 = {
+				naval_base = 2
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+
+		1938.10.25 = {
+			controller = JAP
+		}
+	}
+	manpower=248000
+	buildings_max_level_factor=1.000
+}
