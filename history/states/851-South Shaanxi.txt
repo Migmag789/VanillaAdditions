@@ -1,17 +1,18 @@
-state=
-{
-	id=615
-	name="STATE_615"
-	manpower = 5362000
-	
+state={
+	id=851
+	name="South_shanxi"
+	provinces={
+		1180 1203 1519  1575 4538 4634 7571 10421 12078 12344 
+	}
 	state_category = town
-	
-	history=
-	{
+	history={
 		owner = SHX
 		add_core_of = SHX
 		add_core_of = CHI
 		add_core_of = PRC
+		victory_points = {
+			1519 3 
+		}
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
@@ -30,7 +31,6 @@ state=
 			}
 		}
 	}
-	provinces={
-		1027 1034 1438 1531 1575 4074 4174 4469 10367 10480 10507 12300 12432 
-	}
+	manpower=6239000
+	buildings_max_level_factor=1.000
 }

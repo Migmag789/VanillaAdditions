@@ -1,0 +1,26 @@
+state={
+	id=837
+	name="Vladivostok_city"
+	provinces={
+		957 
+	}
+	state_category = town
+
+	history={
+		owner = SOV
+		victory_points = {
+			957 15
+		}
+		buildings = {
+			infrastructure = 5
+			dockyard = 1
+			957 = {
+				naval_base = 8
+				coastal_bunker = 3
+			}
+		}
+		add_core_of = SOV
+	}
+	manpower=181200
+	buildings_max_level_factor=1.000
+}

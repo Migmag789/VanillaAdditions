@@ -1,25 +1,23 @@
 state={
-	id=751
-	name="STATE_751"
+	id=854
+	name="West_chengdu"
 	provinces={
-		1999 2067 7294 10726 12819 
+		1257 4375 9966 10841 12141 
 	}
-	manpower=258000
+	manpower=1958000
+	state_category = rural
 	buildings_max_level_factor=1.000
-	state_category=pastoral
 	history={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 
 		}
 		victory_points = {
 			12141 3
-		}
-		victory_points = {
-			7294 1
 		}
 	}
 }
