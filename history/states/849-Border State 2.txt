@@ -2,7 +2,7 @@ state={
 	id=849
 	name="North_gansu"
 	provinces={
-		1985 3742 8081 
+		1985 3742 8081
 	}
 	state_category=rural
 	manpower=541120

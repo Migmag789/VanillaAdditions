@@ -2,7 +2,7 @@ state={
 	id=840
 	name="East_shandong"
 	provinces={
-		1104 1184 1200 4186 7105 10018 
+		1104 1184 1200 4186 7105 10018
 	}
 	history={
 		owner = LUU

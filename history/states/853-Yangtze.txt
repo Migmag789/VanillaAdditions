@@ -2,7 +2,7 @@ state={
 	id=853
 	name="Yangtze"
 	provinces={
-		1084 7160 7189 9987 11933 11962 12093 
+		1084 7160 7189 9987 11933 11962 12093
 	}
 	state_category = town
 	manpower=9316000

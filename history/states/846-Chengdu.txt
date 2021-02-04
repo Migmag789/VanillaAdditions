@@ -2,7 +2,7 @@ state={
 	id=846
 	name="Chengdu"
 	provinces={
-		1367 4925 8026 10132 12767 
+		1367 4925 8026 10132 12767
 	}
 	resources={
 		steel=4.000
@@ -20,7 +20,7 @@ state={
 			industrial_complex = 1
 		}
 		victory_points = {
-			4925 5 
+			4925 5
 		}
 		1939.1.1 = {
 			buildings = {

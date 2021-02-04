@@ -2,7 +2,7 @@ state={
 	id=843
 	name="Fuzhou"
 	provinces={
-		4196 
+		4196
 	}
 	manpower=293000
 	buildings_max_level_factor=1.000
@@ -20,7 +20,7 @@ state={
 			}
 		}
 		victory_points = { 
-			4196 3 
+			4196 3
 		}
 	}
 }
