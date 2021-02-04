@@ -171,6 +171,12 @@ if = {
 	}
 }
 
+give_guarantee = YEM
+give_guarantee = IRQ
+give_guarantee = OMA
+give_guarantee = NEP
+give_guarantee = BHU
+
 
 if = {
 	limit = { has_dlc = "Together for Victory" }

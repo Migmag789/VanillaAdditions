@@ -1,0 +1,28 @@
+
+state={
+	id=872
+	name="Ionian"
+	manpower = 40900
+	
+	state_category = rural
+	
+	resources={
+		chromium=14 # was: 20
+		steel = 14 # was: 20
+	}
+
+	history={
+		victory_points = {
+			10203 1
+		}
+		owner = GRE
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = GRE
+	}
+
+	provinces = {
+		1106 10203
+	}
+}

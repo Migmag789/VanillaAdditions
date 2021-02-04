@@ -1,0 +1,20 @@
+state=
+{
+	id=871
+	name="Suceava"
+	manpower = 85362
+	
+	state_category = rural
+	
+	history=
+	{
+		owner = ROM
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = ROM
+	}
+	provinces=
+	{
+3728 6761 11689 	}
+}

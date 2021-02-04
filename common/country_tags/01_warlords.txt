@@ -1,1 +1,13 @@
 TNG = "countries/Tunganistan.txt"
+KNG = "countries/Kang.txt"
+JII = "countries/Ji.txt"
+LUU = "countries/Lu.txt"
+
+FNG = "countries/Feng.txt"
+NGN = "countries/Ning-gan.txt"
+XNG = "countries/Xiang.txt"
+CCQ = "countries/Chuan-Chongqing.txt"
+CCD = "countries/Chuan-Chengdu.txt"
+NWG = "countries/Northwest-Garrison.txt"
+YUE = "countries/Yue.txt"
+CIM = "countries/CommunistsInManchuria.txt"

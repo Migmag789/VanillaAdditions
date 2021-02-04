@@ -2,7 +2,7 @@
 state={
 	id=155
 	name="STATE_155" # Transdanubia
-	manpower = 2197605
+	manpower = 1500000
 	
 	state_category = city
 	resources={
@@ -15,7 +15,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 3
+			industrial_complex = 2
 			arms_factory = 1
 			air_base = 3
 		}

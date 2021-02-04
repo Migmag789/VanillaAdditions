@@ -29,6 +29,17 @@ CHI_integrate_the_warlords = {
 			tag = SHX
 			tag = XSM
 			tag = SIK
+			tag = TNG
+			tag = KNG
+			tag = JII
+			tag = LUU
+			tag = FNG
+			tag = NGN
+			tag = XNG
+			tag = CCQ
+			tag = CCD
+			tag = NWG
+			tag = YUE
 		}
 	}
 	icon = generic_political_actions
@@ -43,6 +54,17 @@ CHI_integrate_the_warlords = {
 					tag = SHX
 					tag = XSM
 					tag = SIK
+					tag = TNG
+					tag = KNG
+					tag = JII
+					tag = LUU
+					tag = FNG
+					tag = NGN
+					tag = XNG
+					tag = CCQ
+					tag = CCD
+					tag = NWG
+					tag = YUE
 				}
 			}
 		}
@@ -104,6 +126,16 @@ CHI_seek_japanese_support = {
 			tag = YUN
 			tag = SHX
 			tag = XSM
+			tag = KNG
+			tag = JII
+			tag = LUU
+			tag = FNG
+			tag = NGN
+			tag = XNG
+			tag = CCQ
+			tag = CCD
+			tag = NWG
+			tag = YUE
 		}
 	}
 }

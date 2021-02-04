@@ -715,3 +715,47 @@ BRG = {
 	color = rgb { 105 2 153 }
 	color_ui = rgb { 105 2 153 }	
 }
+KNG = {
+	color = rgb { 194 214 81 }
+	color_ui = rgb { 194 214 81 }	
+}
+JII = {
+	color = rgb { 158 9 114 }
+	color_ui = rgb { 158 9 114 }
+}
+LUU = {
+	color = rgb { 14 94 61 }
+	color_ui = rgb { 14 94 61 }
+}
+FNG = {
+	color = rgb { 110 133 37 }
+	color_ui = rgb { 110 133 37 }
+}
+NGN = {
+	color = rgb { 103 38 150 }
+	color_ui = rgb { 103 38 150 }
+}
+XNG = {
+	color = rgb { 110 89 39 }
+	color_ui = rgb { 110 89 39 }
+}
+CCQ = {
+	color = rgb { 130 44 145 }
+	color_ui = rgb { 130 44 145 }
+}
+CCD = {
+	color = rgb { 8 128 8 }
+	color_ui = rgb { 8 128 8 }
+}
+NWG = {
+	color = rgb { 196 187 82 }
+	color_ui = rgb { 196 187 82 }
+}
+YUE = {
+	color = rgb { 3 50 79 }
+	color_ui = rgb { 3 50 79 }
+}
+CIM = {
+	color = rgb { 168 10 23 }
+	color_ui = rgb { 168 10 23 }
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=860
+	name="Western Transdanubia" # Transdanubia
+	manpower = 983000
+	
+	state_category = city
+	resources={
+		oil = 1 # was: 1
+	}
+	history={
+		owner = HUN
+		victory_points = {
+			11610 5 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		add_core_of = HUN
+	}
+
+	provinces={
+		11627 3670 3683 6720 686
+	}
+}

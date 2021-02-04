@@ -1,0 +1,23 @@
+state={
+	id=840
+	name="East_shandong"
+	provinces={
+		1104 1184 1200 4186 7105 10018 
+	}
+	history={
+		owner = LUU
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = LUU
+		buildings = {
+			infrastructure = 3
+		}
+
+		1938.10.25 = {
+			controller = JAP
+		}
+	}
+	state_category = town
+	manpower=9050211
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,25 @@
+state={
+	id=858
+	name="Danzig"
+	manpower = 380100
+	
+	state_category = city
+	history={
+		owner = POL
+		victory_points = {
+			362 10
+		}
+		buildings = {
+			infrastructure = 6
+			9263 = {
+				naval_base = 5
+			}
+		}
+		add_core_of = POL
+		add_core_of = GER
+	}
+
+	provinces={
+		362
+	}
+}

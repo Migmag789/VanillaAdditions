@@ -1,0 +1,34 @@
+state={
+	id=850
+	name="East_henan"
+	state_category = town
+	provinces={
+		4010 7085 7126 7129 7540 9995 10098 10434 10446 12426 
+	}
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+
+		1938.10.25 = {		
+			buildings = {
+				industrial_complex = 2
+				infrastructure = 8
+				air_base = 2
+				arms_factory = 1
+			}
+			JAP = {
+				set_province_controller = 4010
+				set_province_controller = 7074
+				set_province_controller = 7129
+				set_province_controller = 9995
+			} 			
+		}
+	}
+	manpower=16220880
+	buildings_max_level_factor=1.000
+}

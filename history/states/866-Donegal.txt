@@ -1,0 +1,22 @@
+
+state=
+{
+	id=866
+	name="STATE_134"
+	manpower = 36000
+	
+	state_category = town
+
+	history=
+	{
+		owner = IRE
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = IRE
+	}
+
+	provinces=
+	{
+337	}
+}

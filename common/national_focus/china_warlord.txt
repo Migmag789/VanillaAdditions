@@ -12,6 +12,17 @@
 				tag = GXC
 				tag = SHX
 				tag = XSM
+				tag = CCD
+				tag = CCQ
+				tag = FNG
+				tag = JII
+				tag = KNG
+				tag = LUU
+				tag = NGN
+				tag = NWG
+				tag = TNG
+				tag = XNG
+				tag = YUE
 			}
 			has_dlc = "Waking the Tiger"
 		}

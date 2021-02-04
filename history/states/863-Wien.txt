@@ -1,0 +1,25 @@
+
+state={
+	id=863
+	name="Wien"
+	manpower = 130000
+	
+	state_category = town
+
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		victory_points = {
+			11666 30.0 
+		}
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		11666
+	}
+}

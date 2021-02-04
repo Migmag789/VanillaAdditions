@@ -1,0 +1,24 @@
+state={
+	id=854
+	name="West_chengdu"
+	provinces={
+		1257 4375 9966 10841 12141 
+	}
+	manpower=1958000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	history={
+		owner = NWG
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = NWG
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			12141 3
+		}
+	}
+}

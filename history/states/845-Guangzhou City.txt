@@ -1,0 +1,31 @@
+state={
+	id=845
+	name="Guangzhou_city"
+	manpower = 1134000
+	buildings_max_level_factor = 1.000
+	provinces={
+		1047 
+	}
+	state_category = city
+	history={
+		owner = YUE
+		add_core_of = YUE
+		add_core_of = CHI
+		add_core_of = PRC
+		
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
+			1047 = {
+				naval_base = 5
+				coastal_bunker = 1
+				bunker = 1
+			}
+
+		}
+		victory_points = {
+			1047 5
+		}
+	}
+}

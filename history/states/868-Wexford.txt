@@ -1,0 +1,25 @@
+
+state={
+	id=868
+	name="Wexford" # Leinster
+	manpower = 357600
+	resources={
+		aluminium=2 # was: 2
+		steel=2 # was: 3
+	}
+	
+	state_category = city
+	
+	history={
+		owner = IRE
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		add_core_of = IRE
+	}
+
+	provinces={
+		285 3342 7377 
+	}
+}

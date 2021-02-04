@@ -2,17 +2,18 @@ state={
 	id=751
 	name="STATE_751"
 	provinces={
-		1999 2067 7294 10726 10841 12141 12819 
+		1999 2067 7294 10726 12819 
 	}
-	manpower=300000
+	manpower=258000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	history={
-		owner = CHI
+		owner = KNG
 		add_core_of = CHI
 		add_core_of = PRC
+		add_core_of = KNG
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 
 		}
 		victory_points = {
@@ -21,14 +22,5 @@ state={
 		victory_points = {
 			7294 1
 		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 1
-				infrastructure = 2
-
-			}
-
-		}
-
 	}
 }
