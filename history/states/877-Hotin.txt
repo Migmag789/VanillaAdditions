@@ -1,0 +1,21 @@
+state=
+{
+	id=877
+	name="Hotin"
+	manpower = 100000
+	
+	state_category = pastoral
+	
+	history= {
+		add_core_of = MOL
+		add_core_of = UKR
+		owner = ROM
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = ROM
+	}
+	provinces=
+	{
+3407 	}
+}

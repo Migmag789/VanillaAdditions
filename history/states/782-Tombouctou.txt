@@ -2,7 +2,7 @@
 state={
 	id=782
 	name="STATE_782" # Tombouctou
-	manpower = 79243
+	manpower = 79000
 	
 	state_category = wasteland
 	impassable = yes
@@ -17,6 +17,6 @@ state={
 	}
 
 	provinces={
-		1115 2068 10725 10868
+		2068 10725 10868
 	}
 }
