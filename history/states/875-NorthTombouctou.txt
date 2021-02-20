@@ -1,0 +1,20 @@
+state={
+	id=875
+	name="North West Tombouctou" # Tombouctou
+	manpower = 243
+	
+	state_category = pastoral
+
+	history={
+		owner = FRA
+		add_core_of = MLI
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces={
+		1115
+	}
+}

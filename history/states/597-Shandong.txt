@@ -4,8 +4,8 @@ state=
 	name="STATE_597"
 	manpower = 11769200
 	state_category = town
-
-
+	
+	
 	history={
 		owner = LUU
 		add_core_of = CHI

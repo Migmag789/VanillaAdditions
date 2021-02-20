@@ -1,0 +1,20 @@
+
+state={
+	id=876
+	name="STATE_514" # Algerian Desert
+	manpower = 38412
+	
+	state_category = pastoral
+
+	history={
+		owner = FRA
+		add_core_of = ALG
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces={
+		1958 7041 8088 
+	}
+}
