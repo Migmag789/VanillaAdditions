@@ -1,7 +1,7 @@
 
 state={
 	id=876
-	name="STATE_514" # Algerian Desert
+	name="Algerian_desert" # Algerian Desert
 	manpower = 38412
 	
 	state_category = pastoral

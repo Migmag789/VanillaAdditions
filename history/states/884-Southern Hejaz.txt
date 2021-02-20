@@ -1,0 +1,17 @@
+state={
+	id=884
+	name="HejazS"
+	provinces={
+		1923 8073 13260 
+	}
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SAU
+	}
+	state_category = pastoral
+	manpower=42300
+	buildings_max_level_factor=1.000
+}

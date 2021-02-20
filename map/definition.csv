@@ -13252,3 +13252,14 @@
 13251;0;179;1;land;true;plains;2
 13252;179;0;2;land;false;mountain;2
 13253;0;179;2;land;true;plains;2
+13254;128;75;39;land;false;desert;7
+13255;116;52;239;land;false;desert;7
+13256;16;46;241;land;false;desert;7
+13257;9;151;110;land;false;desert;7
+13258;180;189;74;land;false;mountain;7
+13259;233;83;25;land;false;mountain;7
+13260;120;98;147;land;true;mountain;7
+13261;223;39;32;land;false;desert;7
+13262;44;92;248;land;true;desert;7
+13263;139;114;161;land;false;desert;7
+13264;32;192;30;land;true;desert;7

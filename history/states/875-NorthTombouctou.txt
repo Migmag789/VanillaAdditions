@@ -1,6 +1,6 @@
 state={
 	id=875
-	name="North West Tombouctou" # Tombouctou
+	name="North_West_Timbuktu" # Tombouctou
 	manpower = 243
 	
 	state_category = pastoral
