@@ -1,0 +1,17 @@
+state={
+	id=882
+	name="Greater_Jordan"
+	provinces={
+		12101 12455 13261 
+	}
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SAU
+	}
+	manpower=61320
+	state_category = wasteland
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,17 @@
+state={
+	id=886
+	name="Qatari_coast"
+	provinces={
+		1955 4932 10791 12702 
+	}
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SAU
+	}
+	state_category = rural
+	manpower=190430
+	buildings_max_level_factor=1.000
+}

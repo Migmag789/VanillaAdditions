@@ -1,0 +1,37 @@
+state={
+	id=888
+	name="Igdir"
+	provinces={
+		13268 13269 13270 
+	}
+	history={
+		owner = TUR
+		victory_points = {
+			6935 5 
+		}
+		victory_points = {
+			12376 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_claim_by = ARM
+		if = {
+			limit = {
+				has_dlc = "Battle for the Bosporus"
+			}
+			add_core_of = KUR
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Battle for the Bosporus" }
+			}
+			add_core_of = TUR
+			add_core_of = KUR
+		}
+	}
+
+state_category = rural
+	manpower=101000
+	buildings_max_level_factor=1.000
+}

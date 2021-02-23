@@ -1,7 +1,7 @@
 
 state={
 	id=860
-	name="Western Transdanubia" # Transdanubia
+	name="Western_Transdanubia" # Transdanubia
 	manpower = 983000
 	
 	state_category = city

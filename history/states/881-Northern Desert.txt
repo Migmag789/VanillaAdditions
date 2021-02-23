@@ -1,0 +1,17 @@
+state={
+	id=881
+	name="Northerndesert"
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SAU
+	}
+	provinces={
+		8101 13254 13255 13256 
+	}
+	manpower=46850
+	state_category = wasteland
+	buildings_max_level_factor=1.000
+}

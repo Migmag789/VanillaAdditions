@@ -1,0 +1,17 @@
+state={
+	id=885
+	name="Basra"
+	provinces={
+		13262 13263 13264
+	}
+	state_category = pastoral
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SAU
+	}
+	manpower=88700
+	buildings_max_level_factor=1.000
+}

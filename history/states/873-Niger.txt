@@ -1,6 +1,6 @@
 state={
 	id=873
-	name="South Niger"
+	name="South_Niger"
 	
 	state_category = pastoral
 

@@ -2,7 +2,7 @@
 state=
 {
 	id=866
-	name="STATE_134"
+	name="Donegal"
 	manpower = 36000
 	
 	state_category = town

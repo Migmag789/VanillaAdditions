@@ -1,7 +1,7 @@
 
 state = {
 	id=859
-	name="STATE_154"
+	name="Southernplains"
 	manpower = 1262936
 
 	state_category = city
