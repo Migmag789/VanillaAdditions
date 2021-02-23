@@ -1,0 +1,24 @@
+state={
+	id=887
+	name="Kars"
+	provinces={
+		7454 10403 10472 13265 13266 13267 
+	}
+	history={
+		owner = TUR
+		victory_points = {
+			10472 5
+		}
+		buildings = {
+			infrastructure = 4
+			9932 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = TUR
+		add_claim_by = ARM
+	}
+	state_category = town
+	manpower=403899
+	buildings_max_level_factor=1.000
+}

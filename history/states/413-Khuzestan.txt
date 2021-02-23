@@ -4,7 +4,7 @@ state={
 	name="STATE_413"
 	manpower = 797356
 	resources={
-		oil=28 # was: 42
+		oil=26 # was: 42
 	}
 	
 	state_category = rural
@@ -22,9 +22,10 @@ state={
 			7953 1 
 		}
 		add_core_of = PER
+		add_claim_by = IRQ
 	}
 
 	provinces={
-		1922 5005 5089 7953 
+		1922 5005 7953 13272
 	}
 }

@@ -1,0 +1,24 @@
+state={
+	id=891
+	name="Kurdish_border"
+	provinces={
+		1636 1822 7604
+	}
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			7604 1 
+		}
+		victory_points = {
+			1822 1 
+		}
+		add_core_of = PER
+		add_core_of = KUR
+	}
+	state_category = rural
+	manpower=479120
+	buildings_max_level_factor=1.000
+}

@@ -187,6 +187,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4576;12446;sea;4465;-1;-1;-1;-1;;Sakhalin-Hokkaido
 4728;1399;sea;5488;-1;-1;-1;-1;;Kamtchatka-Kurils
 12184;12113;sea;5539;-1;-1;-1;-1;;Indonesia-Malaya
+7982;13273;sea;2919;-1;-1;-1;-1;;Hormuz-Iranmainland
+13274;13273;sea;2919;-1;-1;-1;-1;;Musandam-Hormuz
 
 #impassable terrain
 4318;12789;impassable;-1;-1;-1;-1;-1;;Himalayas
