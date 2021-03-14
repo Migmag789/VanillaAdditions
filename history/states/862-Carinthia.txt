@@ -2,7 +2,7 @@
 state={
 	id=862
 	name="Carinthia"
-	manpower = 561000
+	manpower = 527000
 	
 	state_category = town
 

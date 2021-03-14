@@ -1,0 +1,29 @@
+state={
+	id=896
+	name="East_istanbul"
+	provinces={
+		11829 3851 11811
+	}
+	state_category = town
+	manpower=460024
+	buildings_max_level_factor=1.000
+	history= {
+		owner = TUR
+		victory_points = {
+			11811 1
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+		}
+		add_core_of = TUR
+		if = {
+			limit = { has_dlc = "Battle for the Bosporus"}
+			set_demilitarized_zone = yes
+		}
+		
+		1936.11.9 = {
+			set_demilitarized_zone = no
+		}
+	}
+}

@@ -1,0 +1,19 @@
+state={
+	id=897
+	name="SDCT"
+	provinces={
+		11612 
+	}
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = AUS
+		add_claim_by = SLV
+		add_claim_by = YUG
+	}
+	manpower=34000
+	state_category = pastoral
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,17 @@
+state={
+	id=894
+	name="Smolyan"
+	provinces={
+		878 893 6857 9818 11813 
+	}
+	history={
+		owner = BUL
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BUL
+	}
+	state_category = rural
+	manpower=612000
+	buildings_max_level_factor=1.000
+}
