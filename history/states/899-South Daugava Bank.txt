@@ -1,0 +1,18 @@
+state={
+	id=899
+	name="SDB"
+	provinces={
+		3255 11358 
+	}
+	history={
+		owner = LAT
+
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = LAT
+	}
+	state_category = pastoral
+	manpower=87000
+	buildings_max_level_factor=1.000
+}
