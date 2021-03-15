@@ -1,0 +1,25 @@
+state={
+	id=945
+	name="Rojava"
+	provinces={
+		901 1549 1578 1606 1634 6883 10882 
+	}
+	history={
+		owner = FRA
+		victory_points = {
+			1549 1
+		}
+		victory_points = {
+			6883 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SYR
+		add_core_of = KUR
+	}
+	state_category = pastoral
+
+	manpower=103000
+	buildings_max_level_factor=1.000
+}
