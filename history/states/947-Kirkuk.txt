@@ -1,0 +1,10 @@
+state={
+	id=947
+	name="Kirkuk"
+	provinces={
+		8123 10793 
+	}
+	state_category = pastoral
+	manpower=220000
+	buildings_max_level_factor=1.000
+}
