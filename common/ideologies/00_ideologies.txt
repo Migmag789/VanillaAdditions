@@ -32,7 +32,6 @@ ideologies = {
 			can_send_volunteers = yes
 			can_puppet = yes
 			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
 		}
 		
@@ -42,10 +41,10 @@ ideologies = {
 		faction_impact_on_world_tension = 0.1
 		
 		modifiers = {
-			generate_wargoal_tension = 1.00
-			join_faction_tension = 0.70
-			lend_lease_tension = 0.20
-			send_volunteers_tension = 0.20
+			generate_wargoal_tension = 0.80
+			join_faction_tension = 0.60
+			lend_lease_tension = 0.15
+			send_volunteers_tension = 0.15
 			guarantee_tension = 0.25
 			annex_cost_factor = 0.5
 			civilian_intel_to_others = 20.0

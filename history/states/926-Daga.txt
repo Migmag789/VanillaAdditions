@@ -1,0 +1,22 @@
+
+state={
+	id=926
+	name="STATE_926"
+	manpower = 50000
+	
+	
+	state_category = town
+	
+
+	history={
+		owner = BHU
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BHU
+	}
+
+	provinces={
+		13279 
+	}
+}

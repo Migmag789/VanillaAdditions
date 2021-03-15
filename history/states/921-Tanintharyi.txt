@@ -1,0 +1,26 @@
+
+state={
+	id=921
+	name="STATE_921"
+	manpower = 2722500
+	
+	state_category = town
+	
+	resources={
+		rubber=35 # was: 4
+		tungsten = 11
+	}
+
+	history={
+		add_core_of = BRM
+		owner = RAJ
+		buildings = {
+			infrastructure = 4
+		}
+
+	}
+
+	provinces={
+		10217 4275 1296 12292 1385 1315 7295 12125 1403 4408 12238
+	}
+}

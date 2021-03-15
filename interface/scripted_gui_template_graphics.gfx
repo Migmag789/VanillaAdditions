@@ -1,0 +1,46 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_scripted_gui_window_background"
+		textureFile = "\gfx\interface\constructions_bg3.dds"
+	}
+	spriteType = {
+		name = "GFX_nat_ideas_open_button_bg"
+		textureFile = "nat_ideas_main_close"
+	}
+	spriteType = {
+		name = "GFX_lebensraum"
+		textureFile = "\gfx\lebensraum.dds"
+	}
+	spriteType = {
+		name = "GFX_sh"
+		textureFile = "\gfx\lebensraum\gfx_sh.dds"
+	}
+	spriteType = {
+		name = "GFX_dzg"
+		textureFile = "\gfx\lebensraum\gfx_dzg.dds"
+	}
+	spriteType = {
+		name = "GFX_gdansk"
+		textureFile = "\gfx\lebensraum\gfx_gdansk.dds"
+	}
+	spriteType = {
+		name = "GFX_poznan"
+		textureFile = "\gfx\lebensraum\gfx_poz.dds"
+	}
+	spriteType = {
+		name = "GFX_kat"
+		textureFile = "\gfx\lebensraum\gfx_kat.dds"
+	}
+	
+
+
+
+	
+	spriteType = {
+		name = "GFX_lebensraum_regions"
+		textureFile = "\gfx\lebensraum\lebensraum_regions.dds"
+	}
+	
+
+}

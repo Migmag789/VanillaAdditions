@@ -29,6 +29,7 @@ country_event = {
 		date = 1936.6.1
 		tag = GXC
 	}
+	fire_only_once = yes
 	option = {
 		name = gxc.1.a
 		declare_war_on = {

@@ -33,6 +33,9 @@ HOL = {	color = rgb { 209 118 29 }
 CZE = {	color = rgb { 44 116 163 }
 		color_ui = rgb { 70 217 203 }
 }
+LIC = {	color = rgb { 44 116 163 }
+		color_ui = rgb { 70 217 203 }
+}
 POL = {
 	color = rgb { 199 72 89 }
 	color_ui = rgb { 255 120 138 }

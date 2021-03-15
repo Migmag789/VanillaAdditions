@@ -1,0 +1,133 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "new_scripted_gui_window"
+		position = { x = 0 y = 0}	
+		size = { width = 1200 height= 900 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_plain_bg2"
+		}
+		background = {
+			name = "b2"
+			quadTextureSprite = "GFX_tiled_window2_1b_border"
+		}
+
+		buttonType ={
+			name ="close"
+			spriteType = "nat_ideas_main_close"
+			position = { x= -60 y = 15 }
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+			quadTextureSprite = "GFX_closebutton"
+		}	
+
+		instantTextboxType = {
+			name = "political_title"
+			position = { x = 20 y = 10 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "Lebensraum Overview"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "political_desc"
+			position = { x = 25 y = 45 }
+			font = "hoi_22header"
+			borderSize = {x = 0 y = 0}
+			text = "The German people is divided and scattered around central Europe. It is our duty to reconquer these lands and integrate them in the Reich."
+			maxWidth = 1200
+			maxHeight = 20
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "region_desc"
+			position = { x = 25 y = 65 }
+			font = "hoi_22header"
+			borderSize = {x = 0 y = 0}
+			text = "Click on a region to interact with. You can core, integrate territories, and more."
+			maxWidth = 1200
+			maxHeight = 20
+			fixedsize = yes
+		}
+
+		###lebensraum###
+		iconType = {
+			name = "lebensraum"
+			position = { x = 50 y = 100}
+			orientation = UPPER_LEFT
+			spriteType = "GFX_lebensraum"
+		}
+
+		###lebensraum regions###
+		iconType = {
+			name = "lebensraum_regions"
+			position = { x = 50 y = 100}
+			orientation = UPPER_LEFT
+			spriteType = "GFX_lebensraum_regions"
+		}
+
+					###denmark
+		###south jutland###
+		buttonType = {
+			name = "southjutland"
+			spriteType = "GFX_sh"
+			position = { x = 344 y = 149}
+			clicksound = click_close
+			pdx_tooltip = "South Jutland"
+			orientation = "UPPER_LEFT"
+		}
+					###poland
+
+		###gdansk###
+		buttonType = {
+			name = "gdansk"
+			spriteType = "GFX_gdansk"
+			position = { x = 737 y = 186}
+			clicksound = click_close
+			pdx_tooltip = "Gdansk"
+			orientation = "UPPER_LEFT"
+		}
+		###danzig###
+		buttonType = {
+			name = "danzig"
+			spriteType = "GFX_dzg"
+			position = { x = 782 y = 204}
+			clicksound = click_close
+			pdx_tooltip = "South Jutland"
+			orientation = "UPPER_LEFT"
+		}
+		
+		###poznan###
+		buttonType = {
+			name = "poznan"
+			spriteType = "GFX_poznan"
+			position = { x = 669 y = 280}
+			clicksound = click_close
+			pdx_tooltip = "Poznan"
+			orientation = "UPPER_LEFT"
+		}
+
+		###katowice###
+		buttonType = {
+			name = "katowice"
+			spriteType = "GFX_kat"
+			position = { x = 789 y = 420}
+			clicksound = click_close
+			pdx_tooltip = "Katowice"
+			orientation = "UPPER_LEFT"
+		}
+
+	}
+}

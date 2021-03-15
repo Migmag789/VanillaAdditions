@@ -1,0 +1,31 @@
+
+state={
+	id=912
+	name="STATE_912"
+	manpower = 1528000
+	
+	state_category = town
+	
+	resources={
+		chromium=3 # was: 8
+		tungsten=4 # was: 38
+	}
+
+
+	history={
+		add_core_of = VIN
+		owner = FRA
+		victory_points = {
+			4075 1 
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+
+	provinces={
+		4119 12048 1073 12008 7518 12065 7015 9948 1157 7093
+	}
+}

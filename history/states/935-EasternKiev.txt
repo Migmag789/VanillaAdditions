@@ -1,0 +1,25 @@
+
+state={
+	id=935
+	name="STATE_935"
+	manpower = 495352
+	resources={
+		oil=8 # was: 14
+		aluminium=7 # was: 12
+	}
+	
+	state_category = city
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = SOV
+		add_core_of = UKR
+	}
+
+	provinces={
+		489 582 9543 11557 
+	}
+}

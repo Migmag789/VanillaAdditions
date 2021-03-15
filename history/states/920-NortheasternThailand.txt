@@ -1,0 +1,28 @@
+
+state={
+	id=920
+	name="STATE_920"
+	manpower = 2000000
+	
+	state_category = city
+	
+	resources={
+		rubber=8 # was: 10
+		tungsten=2 # was: 2
+	}
+
+	history={
+		owner = SIA
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			10438 1 
+		}
+		add_core_of = SIA
+	}
+
+	provinces={
+		10384 7516 4511 1535 1548 12417 7601 12431 12402 12360 10425 10438 12264 
+	}
+}

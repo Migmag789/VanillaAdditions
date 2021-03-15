@@ -1,0 +1,30 @@
+state={
+	id=904
+	name="STATE_904"
+	resources={
+		steel=6.000
+		chromium=7.000
+		tungsten=3
+		aluminium=2
+	}
+
+	history={
+		owner = MON
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = MON
+		add_core_of = SOV
+		add_core_of = CHI
+		add_core_of = PRC
+
+	}
+
+	provinces={
+		4751 10539 1774 12520 7843 12695 7773 10669 4777 10563 10695 1689 7799 12544
+	}
+	manpower=125000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

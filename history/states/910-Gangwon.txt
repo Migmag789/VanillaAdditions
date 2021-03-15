@@ -1,0 +1,21 @@
+state=
+{
+	id=910
+	name="STATE_910"
+	manpower = 3000000
+	
+	state_category = rural
+	history=
+	{
+		owner = JAP
+		buildings = {
+			infrastructure = 4
+		}
+
+		add_core_of = KOR
+
+	}
+	provinces={
+		4004 11958 1148 7021 12011 9936
+	}
+}

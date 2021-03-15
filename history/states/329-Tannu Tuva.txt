@@ -2,9 +2,10 @@
 state={
 	id=329
 	name="STATE_329"
-	manpower = 85000
+	manpower = 55000
 	resources={
-		chromium=2 # was: 2
+		chromium=11 # was: 2
+		steel = 9
 	}
 	
 	state_category = rural
@@ -21,9 +22,12 @@ state={
 		}
 		add_core_of = TAN
 		add_core_of = SOV
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = MON
 	}
 
 	provinces={
-		1676 1877 4680 7703 7731 7804 7819 10597 10627 10646 12610 12625 
+		1877 4680 10597 10627 10646 12610 
 	}
 }

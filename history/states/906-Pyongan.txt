@@ -1,0 +1,24 @@
+
+state={
+	id=906
+	name="STATE_906"
+	manpower = 1700000
+	state_category = town
+	resources={
+		steel=3 # was: 30
+		aluminium=5 # was: 52
+	}
+
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 3
+		}
+
+		add_core_of = KOR
+	}
+
+	provinces={
+		11835 9918 9795 11828 6963 906 11775 912 11896 9790 3912 978 852
+	}
+}

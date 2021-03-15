@@ -1,0 +1,40 @@
+
+
+music_station = "vanadd_musics"
+
+#MAIN THEME
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.25
+		}		
+	}
+}
+
+music = {
+	song = "maintheme1"
+	chance = {
+		modifier = {
+			factor = 0.25
+		}		
+	}
+}
+
+music = {
+	song = "maintheme2"
+	chance = {
+		modifier = {
+			factor = 0.25
+		}		
+	}
+}
+
+music = {
+	song = "maintheme3"
+	chance = {
+		modifier = {
+			factor = 0.25
+		}		
+	}
+}
