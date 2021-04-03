@@ -1,0 +1,160 @@
+ideas = {
+	country = {
+		SOV_second_five_year_plan = {
+			picture = generic_foreign_capital
+			allowed = {
+				original_tag = SOV
+				always = yes
+			}
+	
+			allowed_civil_war = {
+					always = yes
+				}
+	
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.05
+				}
+
+		}
+
+		SOV_inefficient_industry = {
+			allowed = {
+				original_tag = SOV
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_dockyard_factor = -0.05
+				production_speed_arms_factory_factor = -0.1
+			}
+		}
+
+		SOV_railway_issues = {
+			allowed = {
+				original_tag = SOV
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				repair_speed_infrastructure_factor = -0.25
+				production_speed_infrastructure_factor = -0.15
+				stability_factor = -0.03
+				consumer_goods_factor = 0.05
+
+			}
+		}
+
+		SOV_low_quality_goods = {
+			allowed = {
+				original_tag = SOV
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.03
+				political_power_factor = -0.2
+
+			}
+		}
+
+		SOV_revolution_long_gone = {
+			allowed = {
+				original_tag = SOV
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.15
+				war_support_factor = -0.05
+				justify_war_goal_time = -0.25
+
+			}
+		}
+
+		SOV_low_literacy = {
+			allowed = {
+				original_tag = SOV
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = -0.15
+				political_power_factor = 0.15
+
+			}
+		}
+
+		SOV_widespread_outbreaks = {
+			allowed = {
+				original_tag = SOV
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.15
+				recruitable_population = -0.05
+				mobilization_speed = -0.05
+
+			}
+		}
+
+		SOV_plot_in_the_army = {
+			allowed = {
+				original_tag = SOV
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.03
+				mobilization_speed = -0.03
+				command_power_gain = -0.03
+
+			}
+		}
+
+		SOV_infrastructure_effort = {
+			allowed = {
+				original_tag = SOV
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+	}
+}

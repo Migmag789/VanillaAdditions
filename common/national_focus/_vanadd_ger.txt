@@ -1,0 +1,1612 @@
+focus_tree = {
+	id = gerv
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	#Focus for Send offer to Japan Imperial Navy
+	focus = {
+		id = GER_send_offer_to_japan_imperial_navy
+		icon = GFX_goal_unknown
+		x = 12
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_zplan }
+		mutually_exclusive = { 
+			focus = GER_graf_zeppelin_project 
+			focus = GER_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Modern Destroyer Production
+	focus = {
+		id = GER_modern_destroyer_production
+		icon = GFX_goal_unknown
+		x = 11
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_das_kriegsmarine }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Nuclear Submarine ?
+	focus = {
+		id = GER_nuclear_submarine_
+		icon = GFX_goal_unknown
+		x = 5
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Convoy Production
+	focus = {
+		id = GER_convoy_production
+		icon = GFX_goal_unknown
+		x = 7
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_crossing_the_atlantic }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for H-Class Battleship
+	focus = {
+		id = GER_hclass_battleship
+		icon = GFX_goal_unknown
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_zplan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Admiral-Hipper-Klasse
+	focus = {
+		id = GER_admiralhipperklasse
+		icon = GFX_goal_unknown
+		x = 13
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_zplan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for K-Klasse Cruiser
+	focus = {
+		id = GER_kklasse_cruiser
+		icon = GFX_goal_unknown
+		x = 7
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_zplan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Type 1936 Destroyer
+	focus = {
+		id = GER_type_1936_destroyer
+		icon = GFX_goal_unknown
+		x = 5
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_zplan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Graf Zeppelin Project
+	focus = {
+		id = GER_graf_zeppelin_project
+		icon = GFX_goal_unknown
+		x = 10
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_zplan }
+		mutually_exclusive = { focus = GER_send_offer_to_japan_imperial_navy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bismarck Schlachtschiff
+	focus = {
+		id = GER_bismarck_schlachtschiff
+		icon = GFX_goal_unknown
+		x = 15
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_hclass_battleship }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Atlantikschlacht
+	focus = {
+		id = GER_atlantikschlacht
+		icon = GFX_goal_unknown
+		x = 7
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_das_kriegsmarine 
+			focus = GER_ubootwaffe 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Light Cruiser Fleet Modernization
+	focus = {
+		id = GER_light_cruiser_fleet_modernization
+		icon = GFX_goal_unknown
+		x = 7
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_kklasse_cruiser }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fleet In Being Doctrine
+	focus = {
+		id = GER_fleet_in_being_doctrine
+		icon = GFX_goal_unknown
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_erich_readers_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Das Kriegsmarine
+	focus = {
+		id = GER_das_kriegsmarine
+		icon = GFX_goal_unknown
+		x = 10
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_admiralhipperklasse 
+			focus = GER_bismarck_schlachtschiff 
+			focus = GER_bluewater_destroyer 
+			focus = GER_light_cruiser_fleet_modernization 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Crossing The Atlantic
+	focus = {
+		id = GER_crossing_the_atlantic
+		icon = GFX_goal_unknown
+		x = 7
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_atlantikschlacht }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for H-Klasse Schlachtschiff
+	focus = {
+		id = GER_hklasse_schlachtschiff
+		icon = GFX_goal_unknown
+		x = 15
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_das_kriegsmarine }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Type XXI U-Boat
+	focus = {
+		id = GER_type_xxi_uboat
+		icon = GFX_goal_unknown
+		x = 5
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_atlantikschlacht }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for U-Boot Modernization
+	focus = {
+		id = GER_uboot_modernization
+		icon = GFX_goal_unknown
+		x = 3
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_trade_interdiction_doctrine }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ubootwaffe
+	focus = {
+		id = GER_ubootwaffe
+		icon = GFX_goal_unknown
+		x = 3
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_uboot_modernization }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Karl Dönitz's Plan
+	focus = {
+		id = GER_karl_dnitzs_plan
+		icon = GFX_goal_unknown
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_germaniawerft_dockyard }
+		mutually_exclusive = { focus = GER_erich_readers_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Erich Reader's Plan
+	focus = {
+		id = GER_erich_readers_plan
+		icon = GFX_goal_unknown
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_germaniawerft_dockyard }
+		mutually_exclusive = { focus = GER_karl_dnitzs_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for General Rearmement
+	focus = {
+		id = GER_general_rearmement
+		icon = GFX_goal_unknown
+		x = 6
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Naval Rearmament
+	focus = {
+		id = GER_naval_rearmament
+		icon = GFX_goal_unknown
+		x = 6
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_general_rearmement }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Germaniawerft Dockyard
+	focus = {
+		id = GER_germaniawerft_dockyard
+		icon = GFX_goal_unknown
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_naval_rearmament }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Form the Ordensstaats
+	focus = {
+		id = GER_form_the_ordensstaats
+		icon = GFX_goal_unknown
+		x = 35
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_form_the_reichskommissariats }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#possibility to form ordensstaats
+		}
+	}
+
+	#Focus for Form the Reichskommissariats
+	focus = {
+		id = GER_form_the_reichskommissariats
+		icon = GFX_goal_unknown
+		x = 35
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_war_with_france }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#form the reichskommissariats
+		}
+	}
+
+	#Focus for Strike Afghanistan
+	focus = {
+		id = GER_strike_afghanistan
+		icon = GFX_goal_unknown
+		x = 23
+		y = 10
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_to_the_middleeast }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#wargoal on afghanistan
+		}
+	}
+
+	#Focus for Ask Japan for Help
+	focus = {
+		id = GER_ask_japan_for_help
+		icon = GFX_goal_unknown
+		x = 41
+		y = 8
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_unternehmen_barbarossa }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#territorial pact with japan
+		}
+	}
+
+	#Focus for Adapt the Army to the Winter
+	focus = {
+		id = GER_adapt_the_army_to_the_winter
+		icon = GFX_goal_unknown
+		x = 44
+		y = 8
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_unternehmen_barbarossa }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#bonuses against winter attrition
+		}
+	}
+
+	#Focus for Unternehmen Barbarossa
+	focus = {
+		id = GER_unternehmen_barbarossa
+		icon = GFX_goal_unknown
+		x = 44
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_prepare_the_front }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#wargoal on ussr
+		}
+	}
+
+	#Focus for Establish a Russian State
+	focus = {
+		id = GER_establish_a_russian_state
+		icon = GFX_goal_unknown
+		x = 45
+		y = 10
+		cost = 8
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = GER_establish_generalplan_ost 
+			focus = GER_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#create a russian state in occupied territories
+		}
+	}
+
+	#Focus for Prepare the Front
+	focus = {
+		id = GER_prepare_the_front
+		icon = GFX_goal_unknown
+		x = 44
+		y = 6
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_to_the_soviet_union }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#gain some bonuses,
+		}
+	}
+
+	#Focus for Molotov-Ribbentrop Pact
+	focus = {
+		id = GER_molotovribbentrop_pact
+		icon = GFX_goal_unknown
+		x = 31
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_reassert_eastern_claims }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#molotov ribbentrop gamer pact
+		}
+	}
+
+	#Focus for To The Soviet Union
+	focus = {
+		id = GER_to_the_soviet_union
+		icon = GFX_goal_unknown
+		x = 44
+		y = 5
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_anti_comintern_pact }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#unlock intresting decisions to interact with the soviets
+		}
+	}
+
+	#Focus for Strike Iberia
+	focus = {
+		id = GER_strike_iberia
+		icon = GFX_goal_unknown
+		x = 37
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_war_with_france }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#wargoal on iberia
+		}
+	}
+
+	#Focus for Strike Ireland
+	focus = {
+		id = GER_strike_ireland
+		icon = GFX_goal_unknown
+		x = 33
+		y = 7
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_operation_sea_lion }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#wargoal on ireland and the possessor of northern ireland.
+		}
+	}
+
+	#Focus for Operation Sea Lion
+	focus = {
+		id = GER_operation_sea_lion
+		icon = GFX_goal_unknown
+		x = 33
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_around_maginot }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#wargoal on england
+		}
+	}
+
+	#Focus for The Disgusting Stain In The Alps
+	focus = {
+		id = GER_the_disgusting_stain_in_the_alps
+		icon = GFX_goal_unknown
+		x = 37
+		y = 5
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_eyes_to_the_west }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#possibility to share switzerland with others
+		}
+	}
+
+	#Focus for Attack Bulgaria
+	focus = {
+		id = GER_attack_bulgaria
+		icon = GFX_goal_unknown
+		x = 22
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fate_of_yugoslavia }
+		mutually_exclusive = { focus = GER_befriend_bulgaria }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#wargoal on bulgaria
+		}
+	}
+
+	#Focus for Befriend Bulgaria
+	focus = {
+		id = GER_befriend_bulgaria
+		icon = GFX_goal_unknown
+		x = 20
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fate_of_yugoslavia }
+		mutually_exclusive = { focus = GER_attack_bulgaria }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#invite bulgaria to the axis and stuff
+		}
+	}
+
+	#Focus for Second Ljubljana Award
+	focus = {
+		id = GER_second_ljubljana_award
+		icon = GFX_goal_unknown
+		x = 24
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fate_of_yugoslavia }
+		mutually_exclusive = { focus = GER_attack_bulgaria }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#second ljubljana award
+		}
+	}
+
+	#Focus for Fate of Greece
+	focus = {
+		id = GER_fate_of_greece
+		icon = GFX_goal_unknown
+		x = 24
+		y = 8
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_second_ljubljana_award }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#fate of greece
+		}
+	}
+
+	#Focus for Alliance with Spain
+	focus = {
+		id = GER_alliance_with_spain
+		icon = GFX_goal_unknown
+		x = 29
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_remilitarize_the_rhineland }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#alliance with nationalist spain
+		}
+	}
+
+	#Focus for Attack Turkey
+	focus = {
+		id = GER_attack_turkey
+		icon = GFX_goal_unknown
+		x = 22
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fate_of_yugoslavia }
+		mutually_exclusive = { focus = GER_befriend_turkey }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#wargoal on turkey
+		}
+	}
+
+	#Focus for Befriend Turkey
+	focus = {
+		id = GER_befriend_turkey
+		icon = GFX_goal_unknown
+		x = 20
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fate_of_yugoslavia }
+		mutually_exclusive = { focus = GER_attack_turkey }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#turkey invited to our faction
+		}
+	}
+
+	#Focus for Eyes to the West
+	focus = {
+		id = GER_eyes_to_the_west
+		icon = GFX_goal_unknown
+		x = 35
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_anschluss }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#build forts and airports
+		}
+	}
+
+	#Focus for Around Maginot
+	focus = {
+		id = GER_around_maginot
+		icon = GFX_goal_unknown
+		x = 35
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#unlock decisions to do stuff in benelux
+		}
+	}
+
+	#Focus for War With France
+	focus = {
+		id = GER_war_with_france
+		icon = GFX_goal_unknown
+		x = 35
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_around_maginot }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#wargoal with france, claim on alsace
+		}
+	}
+
+	#Focus for Fate of Yugoslavia
+	focus = {
+		id = GER_fate_of_yugoslavia
+		icon = GFX_goal_unknown
+		x = 24
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_first_ljubljana_award }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#fate of yugoslavia
+		}
+	}
+
+	#Focus for Befriend Romania
+	focus = {
+		id = GER_befriend_romania
+		icon = GFX_goal_unknown
+		x = 26
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_second_vienna_award }
+		mutually_exclusive = { focus = GER_war_with_romania }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#befriend romania
+		}
+	}
+
+	#Focus for Demand Slovenia
+	focus = {
+		id = GER_demand_slovenia
+		icon = GFX_goal_unknown
+		x = 24
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_anschluss }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#demand slovenia
+		}
+	}
+
+	#Focus for Integrate South Tyrol
+	focus = {
+		id = GER_integrate_south_tyrol
+		icon = GFX_goal_unknown
+		x = 24
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_war_with_italy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#core south tyrol
+		}
+	}
+
+	#Focus for War with Romania
+	focus = {
+		id = GER_war_with_romania
+		icon = GFX_goal_unknown
+		x = 28
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_second_vienna_award }
+		mutually_exclusive = { focus = GER_befriend_romania }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#wargoal on romania
+		}
+	}
+
+	#Focus for Rome-Berlin Axis
+	focus = {
+		id = GER_romeberlin_axis
+		icon = GFX_goal_unknown
+		x = 26
+		y = 2
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_remilitarize_the_rhineland }
+		mutually_exclusive = { focus = GER_war_with_italy }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			#is 1938, italy has won the italo ethiopian war, and both country are fascists
+		}
+		completion_reward = {
+			#ally italy
+		}
+	}
+
+	#Focus for War with Italy
+	focus = {
+		id = GER_war_with_italy
+		icon = GFX_goal_unknown
+		x = 24
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_remilitarize_the_rhineland }
+		mutually_exclusive = { focus = GER_romeberlin_axis }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			#italy is fascist or non-aligned, and germany is not fascist or is fascist and militarist
+		}
+		completion_reward = {
+			#wargoal on italy
+		}
+	}
+
+	#Focus for Fate of Czechoslovakia
+	focus = {
+		id = GER_fate_of_czechoslovakia
+		icon = GFX_goal_unknown
+		x = 28
+		y = 6
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_first_vienna_award }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#fate of czechoslovakia
+		}
+	}
+
+	#Focus for Berlin-Moscow Axis
+	focus = {
+		id = GER_berlinmoscow_axis
+		icon = GFX_goal_unknown
+		x = 47
+		y = 6
+		cost = 8
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_to_the_soviet_union }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#an unlikely alliance with the soviets...
+		}
+	}
+
+	#Focus for test focus
+	focus = {
+		id = GER_test_focus
+		icon = GFX_goal_unknown
+		x = 60
+		y = 30
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for First Vienna Award
+	focus = {
+		id = GER_first_vienna_award
+		icon = GFX_goal_unknown
+		x = 28
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_demand_the_sudetenlands }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#give slovakia and ruthenian carpathia to hungary
+		}
+	}
+
+	#Focus for Demand the Sudetenlands
+	focus = {
+		id = GER_demand_the_sudetenlands
+		icon = GFX_goal_unknown
+		x = 28
+		y = 4
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_anschluss }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#event for czechoslovakia
+		}
+	}
+
+	#Focus for The Dream of a European Union
+	focus = {
+		id = GER_the_dream_of_a_european_union
+		icon = GFX_goal_unknown
+		x = 49
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_remilitarize_the_rhineland }
+		mutually_exclusive = { focus = GER_the_dream_of_a_grodeustchesreich }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#political power, and bonuses about opinions and stuff
+		}
+	}
+
+	#Focus for Anschluss
+	focus = {
+		id = GER_anschluss
+		icon = GFX_goal_unknown
+		x = 31
+		y = 3
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_dream_of_a_grodeustchesreich }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#anschluss event
+		}
+	}
+
+	#Focus for The Dream of a Großdeustchesreich
+	focus = {
+		id = GER_the_dream_of_a_grodeustchesreich
+		icon = GFX_goal_unknown
+		x = 31
+		y = 2
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_remilitarize_the_rhineland }
+		mutually_exclusive = { focus = GER_the_dream_of_a_european_union }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#political power, justify war bonus
+		}
+	}
+
+	#Focus for Invite Finland to the Axis
+	focus = {
+		id = GER_invite_finland_to_the_axis
+		icon = GFX_goal_unknown
+		x = 31
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_operation_weserbung }
+		mutually_exclusive = { focus = GER_attack_finland }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Attack Sweden
+	focus = {
+		id = GER_attack_sweden
+		icon = GFX_goal_unknown
+		x = 29
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_operation_weserbung }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#wargoal on sweden
+		}
+	}
+
+	#Focus for Z-Plan
+	focus = {
+		id = GER_zplan
+		icon = GFX_goal_unknown
+		x = 10
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fleet_in_being_doctrine }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Enigma Secret Project
+	focus = {
+		id = GER_enigma_secret_project
+		icon = GFX_goal_unknown
+		x = 1
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_uboot_modernization }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Remilitarize the Rhineland
+	focus = {
+		id = GER_remilitarize_the_rhineland
+		icon = GFX_goal_unknown
+		x = 31
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			#you know the rules and so do I
+		}
+		complete_tooltip = {
+			remilitarized_rhineland
+		}
+		completion_reward = {
+			#remilitarize the rhineland
+		}
+	}
+
+	#Focus for Anti Comintern Pact
+	focus = {
+		id = GER_anti_comintern_pact
+		icon = GFX_goal_unknown
+		x = 44
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_anschluss }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			#comintern: exists
+#not at war with italy or japan
+		}
+		complete_tooltip = {
+			#anti comintern pact formed
+		}
+		completion_reward = {
+			#anti comintern pact
+		}
+	}
+
+	#Focus for Closer Ties with Japan
+	focus = {
+		id = GER_closer_ties_with_japan
+		icon = GFX_goal_unknown
+		x = 39
+		y = 4
+		cost = 2
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			#japan and germany has the same ideology
+		}
+		complete_tooltip = {
+			improve_relations_with_japan
+		}
+		completion_reward = {
+			###
+		}
+	}
+
+	#Focus for Second Vienna Award
+	focus = {
+		id = GER_second_vienna_award
+		icon = GFX_goal_unknown
+		x = 26
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_first_vienna_award }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#transylvania event
+		}
+	}
+
+	#Focus for Reassert Eastern Claims
+	focus = {
+		id = GER_reassert_eastern_claims
+		icon = GFX_goal_unknown
+		x = 31
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_anschluss }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#demand memel, gain claims on poland
+		}
+	}
+
+	#Focus for Überfall auf Polen
+	focus = {
+		id = GER_berfall_auf_polen
+		icon = GFX_goal_unknown
+		x = 31
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_reassert_eastern_claims }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#war with poland
+		}
+	}
+
+	#Focus for Operation Weserübung
+	focus = {
+		id = GER_operation_weserbung
+		icon = GFX_goal_unknown
+		x = 30
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_reassert_eastern_claims }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#wargoal on denmark and norway
+		}
+	}
+
+	#Focus for Attack Finland
+	focus = {
+		id = GER_attack_finland
+		icon = GFX_goal_unknown
+		x = 33
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_operation_weserbung }
+		mutually_exclusive = { focus = GER_invite_finland_to_the_axis }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#wargoal puppet finland
+		}
+	}
+
+	#Focus for First Ljubljana Award
+	focus = {
+		id = GER_first_ljubljana_award
+		icon = GFX_goal_unknown
+		x = 24
+		y = 5
+		cost = 7
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_demand_slovenia }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#first ljubljana award triggers
+		}
+	}
+
+	#Focus for To the Middle-East
+	focus = {
+		id = GER_to_the_middleeast
+		icon = GFX_goal_unknown
+		x = 21
+		y = 9
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_attack_turkey 
+			focus = GER_befriend_turkey 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#unlock decisions to do stuff in the middle-east
+		}
+	}
+
+	#Focus for Strike The British Raj
+	focus = {
+		id = GER_strike_the_british_raj
+		icon = GFX_goal_unknown
+		x = 21
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_strike_saudi_arabia 
+			focus = GER_strike_iran 
+			focus = GER_strike_afghanistan 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#wargoal on china
+		}
+	}
+
+	#Focus for Seeluftwaffe
+	focus = {
+		id = GER_seeluftwaffe
+		icon = GFX_goal_unknown
+		x = 10
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_graf_zeppelin_project 
+			focus = GER_send_offer_to_japan_imperial_navy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Blue-water Destroyer
+	focus = {
+		id = GER_bluewater_destroyer
+		icon = GFX_goal_unknown
+		x = 5
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_type_1936_destroyer }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Trade Interdiction Doctrine
+	focus = {
+		id = GER_trade_interdiction_doctrine
+		icon = GFX_goal_unknown
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_karl_dnitzs_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for M-class Project Cruiser
+	focus = {
+		id = GER_mclass_project_cruiser
+		icon = GFX_goal_unknown
+		x = 13
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_das_kriegsmarine }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fall Blau
+	focus = {
+		id = GER_fall_blau
+		icon = GFX_goal_unknown
+		x = 47
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_unternehmen_barbarossa }
+		ai_will_do = {
+			factor = 1
+		}
+		complete_tooltip = {
+			#fall_blau
+		}
+	}
+
+	#Focus for Exploit Caucasus Oil Field
+	focus = {
+		id = GER_exploit_caucasus_oil_field
+		icon = GFX_goal_unknown
+		x = 47
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fall_blau }
+		ai_will_do = {
+			factor = 1
+		}
+		complete_tooltip = {
+			#exploit_caucasus_oil
+		}
+		completion_reward = {
+			#usine pétrolière au caucase
+		}
+	}
+
+	#Focus for Establish Generalplan Ost
+	focus = {
+		id = GER_establish_generalplan_ost
+		icon = GFX_goal_unknown
+		x = 42
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_unternehmen_barbarossa 
+		}
+		prerequisite = { 
+			focus = GER_fall_blau 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		complete_tooltip = {
+			#establish_generalplan
+		}
+		completion_reward = {
+			#war_support
+#political_power
+		}
+	}
+
+	#Focus for Berlin-Moscow Cooperation
+	focus = {
+		id = GER_berlinmoscow_cooperation
+		icon = GFX_goal_unknown
+		x = 47
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_berlinmoscow_axis }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Cooperation Wth Japan
+	focus = {
+		id = GER_cooperation_wth_japan
+		icon = GFX_goal_unknown
+		x = 39
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_closer_ties_with_japan }
+		ai_will_do = {
+			factor = 1
+		}
+		complete_tooltip = {
+			#cooperation_japan
+		}
+	}
+
+	#Focus for Betray our Friend
+	focus = {
+		id = GER_betray_our_friend
+		icon = GFX_goal_unknown
+		x = 39
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_cooperation_wth_japan }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			#at war with japan
+		}
+		available = {
+			#not at war with soviet union
+		}
+		complete_tooltip = {
+			#betray_japan
+		}
+	}
+
+	#Focus for Exploit Romanian Oil
+	focus = {
+		id = GER_exploit_romanian_oil
+		icon = GFX_goal_unknown
+		x = 28
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_war_with_romania }
+		ai_will_do = {
+			factor = 1
+		}
+		complete_tooltip = {
+			#exploit_romanian_oil
+		}
+	}
+
+	#Focus for Reichskommissariat Amerika
+	focus = {
+		id = GER_reichskommissariat_amerika
+		icon = GFX_goal_unknown
+		x = 31
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_invasion_of_amerika }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			#reichskommissariar_amerika
+		}
+	}
+
+	#Focus for Strike Iran
+	focus = {
+		id = GER_strike_iran
+		icon = GFX_goal_unknown
+		x = 21
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_to_the_middleeast }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strike Saudi Arabia
+	focus = {
+		id = GER_strike_saudi_arabia
+		icon = GFX_goal_unknown
+		x = 19
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_to_the_middleeast }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invasion of Amerika
+	focus = {
+		id = GER_invasion_of_amerika
+		icon = GFX_goal_unknown
+		x = 31
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_establish_generalplan_ost 
+		}
+		prerequisite = { 
+			focus = GER_crossing_the_atlantic 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for South Amerika Hell
+	focus = {
+		id = GER_south_amerika_hell
+		icon = GFX_goal_unknown
+		x = 29
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_crossing_the_atlantic }
+		ai_will_do = {
+			factor = 1
+		}
+		complete_tooltip = {
+			#south_amerika_hell
+		}
+	}
+
+	#Focus for Exploit Venezuela Oil
+	focus = {
+		id = GER_exploit_venezuela_oil
+		icon = GFX_goal_unknown
+		x = 29
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_south_amerika_hell }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for To the Himalaya and Beyond
+	focus = {
+		id = GER_to_the_himalaya_and_beyond
+		icon = GFX_goal_unknown
+		x = 21
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_strike_the_british_raj }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

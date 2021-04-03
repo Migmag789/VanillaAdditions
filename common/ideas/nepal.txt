@@ -274,4 +274,22 @@ ideas = {
 			}
 		}
 	}
+
+	country = {
+		v_nep_recent_earthquake = {
+			allowed = {
+				tag = NEP
+				date > 1938.1.1
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.15
+				consumer_goods_factor = 0.15
+			}
+		}
+	}
 }

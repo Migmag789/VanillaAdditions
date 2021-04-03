@@ -289,6 +289,43 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 			}
+		}	
+	}
+	country = {
+		SWI_devalue_the_franc = {
+			picture = generic_foreign_capital
+			allowed = {
+				original_tag = SWI
+				always = yes
+			}
+	
+			allowed_civil_war = {
+					always = yes
+				}
+	
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.05
+				}
+		}
+        
+		SIW_infantry_focus = {
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+				build_cost_ic = -0.1 
+				instant = yes
+				}
+			}
 		}
 	}
 }

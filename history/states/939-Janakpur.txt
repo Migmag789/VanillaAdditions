@@ -1,0 +1,22 @@
+
+state={
+	id=939
+	name="STATE_939"
+	manpower = 700000
+	
+	state_category = town
+	resources={
+		chromium=1 # was: 2
+	}
+	history={
+		owner = NEP
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = NEP
+	}
+
+	provinces={
+		5310 
+	}
+}
